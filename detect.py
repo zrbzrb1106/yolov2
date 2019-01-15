@@ -89,8 +89,8 @@ def main():
         img_orig, bboxes, scores, class_max_index, class_names)
     cv2.imwrite("./yolo2_data/detection.jpg", img_detection)
     print('YOLO_v2 detection has done!')
-    cv2.imshow("detection_results", img_detection)
-    cv2.waitKey(0)
+    # cv2.imshow("detection_results", img_detection)
+    # cv2.waitKey(0)
     cv2.imwrite("./data/detection.jpg", img_detection)
 
 

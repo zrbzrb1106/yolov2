@@ -6,24 +6,34 @@ RUN apt-get update && apt-get install -y \
     iputils-ping \
     iproute \
     software-properties-common \
-    sudo
+    sudo \
+    git \
+    python3-pip \
+    wget
+
+RUN pip3 install --upgrade setuptools && \
+    pip3 install Cython numpy
 
 RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
 
 WORKDIR /app
 RUN git clone https://github.com/zrbzrb1106/yolov2.git
+
+
 RUN git clone https://github.com/thtrieu/darkflow.git && \
     cd darkflow && \
     python3 setup.py build_ext --inplace && \
-    pip install -e .
-RUN wget https://pjreddie.com/media/files/yolov2.weights -O ./bin/yolov2.weights
-RUN flow --model cfg/yolo.cfg --load bin/yolov2.weights --savepb
+    pip3 install -e .
+RUN wget https://pjreddie.com/media/files/yolov2.weights -O darkflow/yolo.weights
 
-COPY ./built_graph/* /app/yolov2/model
-WORKDIR /app
-RUN chmod -R 755 /app/*
-WORKDIR /app/scripts
+WORKDIR /app/yolov2/scripts
+RUN chmod -R 755 ./*
 RUN sh ./setup_env.sh
+
+WORKDIR /app/darkflow
+RUN sudo flow --model cfg/yolo.cfg --load yolo.weights --savepb; exit 0
+RUN cd /app/yolov2 && mkdir model
+RUN cp built_graph/* /app/yolov2/model
 
 WORKDIR /app/yolov2
 
