@@ -3,5 +3,6 @@ model/*
 __*
 pedes_images
 tmp
+data
 dev/plots
 dev/data
