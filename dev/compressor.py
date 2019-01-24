@@ -1,6 +1,17 @@
+# coding:utf-8
+######################
+###  remote debug  ###
+######################
+# import ptvsd
+# addr = ("192.168.31.222", 5678)
+# ptvsd.enable_attach(address=addr, redirect_output=True)
+# ptvsd.wait_for_attach()
+
 import numpy as np
 import copy
 import cv2
+import sys
+import io
 
 from dev import graph_editor as ge
 from detect import *
@@ -17,20 +28,24 @@ class Compressor:
         self.buffer.append(compressed_data)
         return 0
 
-    def read_buffer(self, buf):
-        data = self.get_from_buf()
-        return data
-
-    def get_from_buf(self):
-        return self.buffer[0]
+    def read_buffer(self):
+        data = self._get_from_buf()
+        data.seek(0)
+        decompressed_array = np.load(data)['arr_0']
+        return decompressed_array
     
     def compress(self, data):
         data_copy = copy.copy(data)
-        """
-        compress main loop here
-        """
-        compressed_data = data_copy
-        return compressed_data
+        print(sys.getsizeof(data_copy))
+        data_copy = data_copy.astype(dtype=np.int8)
+        print(sys.getsizeof(data_copy))
+        compressed_array = io.BytesIO()
+        np.savez_compressed(compressed_array, data_copy)
+        print(sys.getsizeof(compressed_array))
+        return compressed_array
+    
+    def _get_from_buf(self):
+        return self.buffer[0]
 
 
 if __name__ == "__main__":
@@ -45,26 +60,30 @@ if __name__ == "__main__":
     input2 = sess2.graph.get_tensor_by_name("yolo/Pad_5:0")
     output2 = sess2.graph.get_tensor_by_name("yolo/output:0")
 
-    input3 = sess2.graph.get_tensor_by_name("yolo/input:0")
-    output3 = sess2.graph.get_tensor_by_name("yolo/output:0")
+    # input3 = sess2.graph.get_tensor_by_name("yolo/input:0")
+    # output3 = sess2.graph.get_tensor_by_name("yolo/output:0")
     compressor = Compressor()
     # main loop
-    img_orig = cv2.imread('./pedes_images/01-20170320211734-25.jpg')
+    img_orig = cv2.imread('./pedes_images/01-20170320211735-19.jpg')
     img = preprocess_image(img_orig)
     output_feature = sess1.run(output1, feed_dict={input1: img})
-    get_feature_map(output_feature, 1)
+    get_feature_map(output_feature, 0)
     
     flag = compressor.fill_buffer(output_feature)
     if flag is not 0:
         raise "Error"
-    compressed_data = compressor.get_from_buf()
-    res = sess2.run(output2, feed_dict={input2: compressed_data})
+    decompressed_data = compressor.read_buffer()
+    decompressed_data = np.load("./dev/data/feature_compressed.npy")
+    res = sess2.run(output2, feed_dict={input2: decompressed_data})
     start = time.time()
     output_decoded = decode(model_output=output2, output_sizes=(608//32, 608//32),
                             num_class=len(class_names), anchors=anchors)
     bboxes, obj_probs, class_probs = sess2.run(
-        output_decoded, feed_dict={input2: output_feature})
+        output_decoded, feed_dict={input2: decompressed_data})
     
+    bboxes, scores, class_max_index = postprocess(
+            bboxes, obj_probs, class_probs, image_shape=img_orig.shape[:2])
+
     img_detection = draw_detection(
         img_orig, bboxes, scores, class_max_index, class_names)
     # cv2.imwrite("./data/detection.jpg", img_detection)

@@ -1,4 +1,7 @@
+cocoapi
 model/*
 __*
 pedes_images
 tmp
+dev/plots
+dev/data

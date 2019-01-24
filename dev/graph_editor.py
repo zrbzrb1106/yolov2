@@ -1,3 +1,5 @@
+# coding:utf-8
+
 import tensorflow as tf
 import numpy as np
 import os
@@ -15,10 +17,15 @@ def read_model(path):
     path: the location of pb or pbtxt file path
     return: tf.Session()
     """
+    # use one cpu core
+    # session_conf = tf.ConfigProto(
+    #   intra_op_parallelism_threads=1,
+    #   inter_op_parallelism_threads=1)
+    # sess = tf.Session(config=session_conf)
+    # use all cores
     sess = tf.Session()
     mod = ['rb', 'r']
     flag = 'rb'
-    filename = os.path.basename(path).split('.')[0]
     if os.path.basename(path).split('.')[-1] == 'pb':
         flag = mod[0]
     elif os.path.basename(path).split('.')[-1] == 'pbtxt':
@@ -29,10 +36,7 @@ def read_model(path):
         graph_def = tf.GraphDef()
         graph_def.ParseFromString(f.read())
         sess.graph.as_default()
-        tf.import_graph_def(graph_def, name=filename)
-        # writer = tf.summary.FileWriter('./dev/log', sess.graph)
-        if flag == 'r':
-            tf.train.write_graph(graph_def, "./dev/splitted_models", filename+".pb", False)
+        tf.import_graph_def(graph_def, name="")
     return sess
 
 
@@ -101,72 +105,50 @@ def restore_model(path):
 
 
 def test():
-    path = './dev/model/yolo.pb'
+    path = './model/yolo.pb'
     sess = tf.Session()
     with tf.gfile.FastGFile(path, 'rb') as f:
         graph_def = tf.GraphDef()
         graph_def.ParseFromString(f.read())
         sess.graph.as_default()
         tf.import_graph_def(graph_def, name="")
-    sess.close()
-    ops = tf.get_default_graph().get_operations()
-    sg_ops = ops[80:]
-    gv = ge.make_view(sg_ops)
-    sub_graph = gv.graph
-    sub_graph_def = sub_graph.as_graph_def()
-    sess_sg = tf.Session()
-    with tf.gfile.FastGFile(path, 'rb') as f:
-        sub_graph_def.ParseFromString(f.read())
-        sess_sg.graph.as_default()
-        tf.import_graph_def(sub_graph_def, name="")
-    print("0")
-
-
-def fill_buffer(buf):
-    data = get_from_buf(buf)
-    compressed_data = compress(buf)
-    return compressed_data
-
-
-def read_buffer(buf):
-    data = get_from_buf(buf)
-    return data
-
-
+    tensors = [n.name for n in tf.get_default_graph().as_graph_def().node]
+    print(1)
+    
 
 if __name__ == "__main__":
     # split_graph(read_model('./model/yolo.pb'))
-    # test()
+    test()
     # initialize
-    sess1 = read_model('./model/splitted_models/part1.pb')
-    sess2 = read_model('./model/splitted_models/yolo.pb')
-    tensor_names = [t.name for op in sess1.graph.get_operations()
-                    for t in op.values()]
-    output1 = sess1.graph.get_tensor_by_name("part1/Pad_5:0")
-    input1 = sess1.graph.get_tensor_by_name("part1/input:0")
-    # main loop
-    img_orig = cv2.imread('./pedes_images/01-20170320211734-25.jpg')
-    img = preprocess_image(img_orig)
-    output_feature = sess1.run(output1, feed_dict={input1: img})
-    # check output feature map
-    output2 = sess2.graph.get_tensor_by_name("part2/output:0")
-    input2 = sess2.graph.get_tensor_by_name("part2/input:0")
-    res = sess2.run(output2, feed_dict={input2: output_feature})
+    # sess1 = read_model('./model/splitted_models/part1.pb')
+    # sess2 = read_model('./model/splitted_models/yolo.pb')
+    # tensor_names = [t.name for op in sess1.graph.get_operations()
+    #                 for t in op.values()]
+    # output1 = sess1.graph.get_tensor_by_name("part1/Pad_5:0")
+    # input1 = sess1.graph.get_tensor_by_name("part1/input:0")
+    # # main loop
+    # img_orig = cv2.imread('./pedes_images/01-20170320211734-25.jpg')
+    # img = preprocess_image(img_orig)
+    # output_feature = sess1.run(output1, feed_dict={input1: img})
+    # # check output feature map
+    # output2 = sess2.graph.get_tensor_by_name("part2/output:0")
+    # input2 = sess2.graph.get_tensor_by_name("part2/input:0")
+    # res = sess2.run(output2, feed_dict={input2: output_feature})
 
-    output_decoded = decode(model_output=output2, output_sizes=(608//32, 608//32),
-                            num_class=len(class_names), anchors=anchors)
-    bboxes, obj_probs, class_probs = sess2.run(
-        output_decoded, feed_dict={input2: output_feature})
+    # output_decoded = decode(model_output=output2, output_sizes=(608//32, 608//32),
+    #                         num_class=len(class_names), anchors=anchors)
+    # bboxes, obj_probs, class_probs = sess2.run(
+    #     output_decoded, feed_dict={input2: output_feature})
 
-    bboxes, scores, class_max_index = postprocess(
-        bboxes, obj_probs, class_probs, image_shape=img_orig.shape[:2])
+    # bboxes, scores, class_max_index = postprocess(
+    #     bboxes, obj_probs, class_probs, image_shape=img_orig.shape[:2])
 
-    img_detection = draw_detection(
-        img_orig, bboxes, scores, class_max_index, class_names)
-    # cv2.imwrite("./data/detection.jpg", img_detection)
-    # print('YOLO_v2 detection has done!')
-    cv2.imshow("detection_results", img_detection)
-    cv2.waitKey(0)
+    # img_detection = draw_detection(
+    #     img_orig, bboxes, scores, class_max_index, class_names)
+    # # cv2.imwrite("./data/detection.jpg", img_detection)
+    # # print('YOLO_v2 detection has done!')
+    # cv2.imshow("detection_results", img_detection)
+    # cv2.waitKey(0)
 
-    get_feature_map(output_feature, 1)
-    print(0)
+    # get_feature_map(output_feature, 1)
+    # print(0)
