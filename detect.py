@@ -128,12 +128,9 @@ def main():
         # get_feature_map(feature_map, 0, 0)
         
         output_sizes = input_size[0]//32, input_size[1]//32
-        output_decoded = decode(model_output=output_tensor, output_sizes=output_sizes,
+        res = sess.run(output_tensor, feed_dict={input_tensor:img})
+        bboxes, obj_probs, class_probs = decode_result(model_output=res, output_sizes=output_sizes,
                                 num_class=len(class_names), anchors=anchors)
-        start = time.time()
-        bboxes, obj_probs, class_probs = sess.run(
-            output_decoded, feed_dict={input_tensor: img})
-        end = time.time()
         bboxes, scores, class_max_index = postprocess(
             bboxes, obj_probs, class_probs, image_shape=img_orig.shape[:2])
         

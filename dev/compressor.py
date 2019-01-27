@@ -36,9 +36,9 @@ class Compressor:
     
     def compress(self, data):
         data_copy = copy.copy(data)
-        print(sys.getsizeof(data_copy))
-        data_copy = data_copy.astype(dtype=np.int8)
-        print(sys.getsizeof(data_copy))
+        # print(sys.getsizeof(data_copy))
+        # data_copy = data_copy.astype(dtype=np.int8)
+        # print(sys.getsizeof(data_copy))
         compressed_array = io.BytesIO()
         np.savez_compressed(compressed_array, data_copy)
         print(sys.getsizeof(compressed_array))
@@ -50,8 +50,8 @@ class Compressor:
 
 if __name__ == "__main__":
     # initialize
-    sess1 = ge.read_model('./model/splitted_models/part1.pb')
-    sess2 = ge.read_model('./model/splitted_models/yolo.pb')
+    sess1 = ge.read_model('./model/splitted_models/part1.pb', "part1")
+    sess2 = ge.read_model('./model/splitted_models/yolo.pb', "yolo")
     tensor_names = [t.name for op in sess1.graph.get_operations()
                     for t in op.values()]
     input1 = sess1.graph.get_tensor_by_name("part1/input:0")
@@ -66,6 +66,7 @@ if __name__ == "__main__":
     # main loop
     img_orig = cv2.imread('./pedes_images/01-20170320211735-19.jpg')
     img = preprocess_image(img_orig)
+    start = time.time()
     output_feature = sess1.run(output1, feed_dict={input1: img})
     get_feature_map(output_feature, 0)
     
@@ -75,11 +76,9 @@ if __name__ == "__main__":
     decompressed_data = compressor.read_buffer()
     decompressed_data = np.load("./dev/data/feature_compressed.npy")
     res = sess2.run(output2, feed_dict={input2: decompressed_data})
-    start = time.time()
-    output_decoded = decode(model_output=output2, output_sizes=(608//32, 608//32),
+
+    bboxes, obj_probs, class_probs = decode_result(model_output=res, output_sizes=(608//32, 608//32), 
                             num_class=len(class_names), anchors=anchors)
-    bboxes, obj_probs, class_probs = sess2.run(
-        output_decoded, feed_dict={input2: decompressed_data})
     
     bboxes, scores, class_max_index = postprocess(
             bboxes, obj_probs, class_probs, image_shape=img_orig.shape[:2])

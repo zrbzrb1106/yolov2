@@ -16,9 +16,8 @@ def gen_results(imgs_path):
     detect object of all images and generate the results format according to coco submission
     """
     # init model
-    sess = ge.read_model('./model/yolo.pb')
+    sess = ge.read_model('./model/yolo.pb', "")
     input_tensor = sess.graph.get_tensor_by_name("input:0")
-    tmp = sess.graph.get_tensor_by_name("Pad_5:0")
     output_tensor = sess.graph.get_tensor_by_name("output:0")
     # read images
     base = imgs_path
@@ -35,12 +34,9 @@ def gen_results(imgs_path):
         
         img = preprocess_image(img_orig)
         output_sizes = input_size[0]//32, input_size[1]//32
-        tmp_data = sess.run(tmp, feed_dict={input_tensor:img})
-        output_decoded = decode(model_output=output_tensor, output_sizes=output_sizes,
+        res = sess.run(output_tensor, feed_dict={input_tensor:img})
+        bboxes, obj_probs, class_probs = decode_result(model_output=res, output_sizes=output_sizes,
                                 num_class=len(class_names), anchors=anchors)
-        bboxes, obj_probs, class_probs = sess.run(
-            output_decoded, feed_dict={tmp: tmp_data})
-
         bboxes, scores, class_max_index = postprocess(
             bboxes, obj_probs, class_probs, image_shape=img_orig.shape[:2])
         for i in range(len(bboxes)):

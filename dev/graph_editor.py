@@ -12,7 +12,7 @@ from google.protobuf import text_format
 from tensorflow.python.framework import graph_io
 import tensorflow.contrib.graph_editor as ge
 
-def read_model(path):
+def read_model(path, name):
     """
     path: the location of pb or pbtxt file path
     return: tf.Session()
@@ -36,7 +36,7 @@ def read_model(path):
         graph_def = tf.GraphDef()
         graph_def.ParseFromString(f.read())
         sess.graph.as_default()
-        tf.import_graph_def(graph_def, name="")
+        tf.import_graph_def(graph_def, name=name)
     return sess
 
 

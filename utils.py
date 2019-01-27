@@ -144,6 +144,44 @@ def bboxes_nms(classes, scores, bboxes, nms_threshold=0.5):
     return classes[idxes], scores[idxes], bboxes[idxes]
 
 
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
+
+def softmax(x):
+    """Compute softmax values for each sets of scores in x."""
+    e_x = np.exp(x - np.max(x))
+    return e_x / e_x.sum(axis=0)
+
+
+def decode_result(model_output, output_sizes = (19, 19), num_class=80, anchors=None):
+    H, W = output_sizes
+    num_anchors = len(anchors)
+    anchors = np.array(anchors, dtype=np.float)
+    # -1, 19*19, 5, 85
+    detection_result = np.reshape(model_output, (-1, H*W, num_anchors, num_class+5))
+    xy_offset = sigmoid(detection_result[:, :, :, 0:2])
+    wh_offset = np.exp(detection_result[:,:,:,2:4])
+    obj_probs = sigmoid(detection_result[:,:,:,4])
+    class_probs = softmax(detection_result[:,:,:,5:])
+    height_index = np.arange(H, dtype=np.float)
+    width_index = np.arange(W, dtype=np.float)
+    x_cell, y_cell = np.meshgrid(height_index, width_index)
+    x_cell = np.reshape(x_cell, [1, -1, 1])
+    y_cell = np.reshape(y_cell, [1, -1, 1])
+    # decode
+    bbox_x = (x_cell + xy_offset[:, :, :, 0]) / W
+    bbox_y = (y_cell + xy_offset[:, :, :, 1]) / H
+    bbox_w = (anchors[:, 0] * wh_offset[:, :, :, 0]) / W
+    bbox_h = (anchors[:, 1] * wh_offset[:, :, :, 1]) / H
+    bboxes = np.stack([bbox_x-bbox_w/2, bbox_y-bbox_h/2,
+                       bbox_x+bbox_w/2, bbox_y+bbox_h/2], axis=3)
+
+    return bboxes, obj_probs, class_probs
+
+
+"""
+# depreciated, using decode_result() instead
 def decode(model_output, output_sizes=(19, 19), num_class=80, anchors=None):
     '''
      model_output: the feature of the output of yolo
@@ -186,3 +224,4 @@ def decode(model_output, output_sizes=(19, 19), num_class=80, anchors=None):
                        bbox_x+bbox_w/2, bbox_y+bbox_h/2], axis=3)
 
     return bboxes, obj_probs, class_probs
+"""
