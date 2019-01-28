@@ -6,8 +6,8 @@ import time
 import json
 
 from detect import *
-from utils import *
-from config import anchors, class_names
+from utils.imgutils import *
+from utils.config import anchors, class_names
 from dev import graph_editor as ge
 
 

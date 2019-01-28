@@ -5,7 +5,7 @@ import numpy as np
 import os
 import time
 import cv2
-from utils import *
+from utils.imgutils import *
 from detect import *
 
 from google.protobuf import text_format

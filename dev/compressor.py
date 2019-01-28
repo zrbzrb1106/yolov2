@@ -15,8 +15,7 @@ import io
 
 from dev import graph_editor as ge
 from detect import *
-from utils import *
-from detect import *
+from utils.imgutils import *
 
 class Compressor:
     def __init__(self):
