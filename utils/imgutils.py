@@ -148,10 +148,9 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 
-def softmax(x):
-    """Compute softmax values for each sets of scores in x."""
+def softmax(x, axis=-1):
     e_x = np.exp(x - np.max(x))
-    return e_x / e_x.sum(axis=0)
+    return e_x / e_x.sum(axis=axis, keepdims=True)
 
 
 def decode_result(model_output, output_sizes = (19, 19), num_class=80, anchors=None):
@@ -180,7 +179,6 @@ def decode_result(model_output, output_sizes = (19, 19), num_class=80, anchors=N
     return bboxes, obj_probs, class_probs
 
 
-"""
 # depreciated, using decode_result() instead
 def decode(model_output, output_sizes=(19, 19), num_class=80, anchors=None):
     '''
@@ -224,4 +222,3 @@ def decode(model_output, output_sizes=(19, 19), num_class=80, anchors=None):
                        bbox_x+bbox_w/2, bbox_y+bbox_h/2], axis=3)
 
     return bboxes, obj_probs, class_probs
-"""

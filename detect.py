@@ -6,7 +6,7 @@ import time
 import statistics
 
 from utils.imgutils import *
-from utils.config import anchors, class_names
+from utils.config import anchors, class_names, category_id_dict
 from dev import graph_editor as ge
 
 def get_feature_map(orig, is_display=0, is_save=0):

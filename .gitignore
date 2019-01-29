@@ -1,9 +1,17 @@
+# ignore config files
 .vscode
+__*
+
+# ignore project files
 cocoapi
 model/*
-__*
 pedes_images
 tmp
 data
 dev/plots
 dev/data
+
+tools
+# ignore big video files
+*.mp4
+*.MOV
