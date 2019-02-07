@@ -48,7 +48,7 @@ class Compressor:
     def __zip_enc(self, data):
         data_copy = copy.copy(data)
         # print(sys.getsizeof(data_copy))
-        # data_copy = data_copy.astype(dtype=np.int8)
+        data_copy = data_copy.astype(dtype=np.int8)
         # print(sys.getsizeof(data_copy))
         compressed_array = io.BytesIO()
         np.savez_compressed(compressed_array, data_copy)

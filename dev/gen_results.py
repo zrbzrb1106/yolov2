@@ -16,7 +16,7 @@ def gen_results(imgs_path):
     """
     detect object of all images and generate the results format according to coco submission
     """
-    
+
     # init model
     sess1 = ge.read_model('./model/splitted_models/part1.pb', "part1")
     sess2 = ge.read_model('./model/splitted_models/yolo.pb', "yolo")
@@ -56,9 +56,9 @@ def gen_results(imgs_path):
             bboxes, obj_probs, class_probs, image_shape=img_orig.shape[:2])
         img_detection = draw_detection(
             img_orig, bboxes, scores, class_max_index, class_names)
-        cv2.imshow("detection_results", img_detection)
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
+        # cv2.imshow("detection_results", img_detection)
+        # cv2.waitKey(0)
+        # cv2.destroyAllWindows()
         for i in range(len(bboxes)):
             res = {}
             res[keys[0]] = img_id

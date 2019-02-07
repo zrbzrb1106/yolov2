@@ -111,7 +111,7 @@ def eval_model(batch_size, sess):
 
 def main():
     input_size = (608, 608)
-    sess = ge.read_model('./model/yolo.pb')
+    sess = ge.read_model('./model/yolo.pb', "yolo")
     # img_orig = cv2.imread('./data/car.jpg')
     
 
@@ -137,10 +137,10 @@ def main():
         img_detection = draw_detection(
             img_orig, bboxes, scores, class_max_index, class_names)
         # cv2.imwrite("./data/detection.jpg", img_detection)
-        
-        print('YOLO_v2 detection has done! spent {} seconds'.format(end - start))
         cv2.imshow("detection_results", img_detection)
         cv2.waitKey(0)
+        cv2.imwrite("./detect.png", img_detection)
+        break
 
 
 if __name__ == "__main__":
