@@ -1,0 +1,45 @@
+FROM ubuntu:xenial
+MAINTAINER manuel.peuster@uni-paderborn.de
+
+RUN apt-get update && apt-get install -y \
+    net-tools \
+    iputils-ping \
+    iproute \
+    software-properties-common \
+    sudo \
+    git \
+    wget \
+    python3-pip \
+    zip \
+    libsm6 \
+    libxext6 \
+    libfontconfig1 \
+    libxrender1 \
+    libgl1-mesa-glx
+
+WORKDIR /app
+RUN git clone https://github.com/zrbzrb1106/yolov2.git
+
+RUN wget --quiet https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh -O ~/anaconda.sh && \
+    /bin/bash ~/anaconda.sh -b -p /opt/conda && \
+    rm ~/anaconda.sh
+
+RUN /opt/conda/bin/conda env create -f /app/yolov2/dockerfiles/environment.yml
+RUN echo "source activate tf_mkl" > ~/.bashrc
+ENV PATH /opt/conda/envs/tf_mkl/bin:$PATH
+ENV CONDA_DEFAULT_ENV tf_mkl
+
+RUN conda install numpy=1.15.0
+
+RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
+
+WORKDIR /app/yolov2
+RUN git clone https://github.com/philferriere/cocoapi.git && \
+    wget http://images.cocodataset.org/zips/val2017.zip && \
+    wget http://images.cocodataset.org/annotations/annotations_trainval2017.zip && \
+    mkdir ./cocoapi/images && \
+    unzip ./val2017.zip -d ./cocoapi/images/ && \
+    unzip ./annotations_trainval2017.zip -d ./cocoapi/
+# RUN cd cocoapi/PythonAPI && python3 setup.py build_ext --inplace
+
+CMD /bin/bash

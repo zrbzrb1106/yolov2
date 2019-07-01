@@ -15,7 +15,7 @@ def get_mAPs():
     dataDir = 'cocoapi'
     dataType = 'val2017'
     annFile = '%s/annotations/%s_%s.json' % (dataDir, prefix, dataType)
-    resFile = '%s/results/results_orig.json' % dataDir
+    resFile = '%s/results/ results_webp_q_10.json' % dataDir
     cocoGt = COCO(annFile)
     cocoDt = cocoGt.loadRes(resFile)
 

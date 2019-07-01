@@ -3,7 +3,20 @@ import numpy as np
 import cv2
 import colorsys
 import random
+import copy
+import io
+import time
+import matplotlib.pyplot as plt
+from PIL import Image
 
+from scipy.spatial import distance
+from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import normalize, scale, minmax_scale
+from sklearn.decomposition import PCA
+
+from skimage.feature import greycoprops, greycomatrix
+from skimage.measure import shannon_entropy
 
 def preprocess_image(image, image_size=(608, 608)):
 
@@ -177,6 +190,287 @@ def decode_result(model_output, output_sizes = (19, 19), num_class=80, anchors=N
                        bbox_x+bbox_w/2, bbox_y+bbox_h/2], axis=3)
 
     return bboxes, obj_probs, class_probs
+
+
+def minmax_norm(arr, minv, maxv):
+    return (arr - arr.min()) * \
+        (maxv - minv) / (arr.max() -
+                arr.min()) + minv
+
+
+def feature_maps_to_image(orig, shape=None, is_digitize = 1, is_unit = 0, is_display=0, is_save=0):
+    """
+    orig: original feature maps tensor
+    shape: the shape of sliced image
+    return: sliced images of feature maps with their min and max info when scaling 
+    """
+    batch_size, m, n, c = orig.shape
+    fmap_images = []
+    for batch in range(batch_size):
+        if not shape:
+            a = int(np.sqrt(c))
+            while c % a is not 0:
+                a = a - 1
+            b = int(c / a)
+            shape = (a, b)
+        feature_maps = orig[batch]
+        info_minmax = (feature_maps.min(), feature_maps.max())
+        dst = np.zeros(shape=feature_maps.shape)
+        if is_digitize:
+            feature_maps = minmax_norm(feature_maps, 0, 255)
+            feature_maps = feature_maps.astype(np.uint8)
+        if is_unit:
+            feature_maps = minmax_norm(feature_maps, 0, 1)
+            feature_maps = feature_maps.astype(np.float)
+        a, b = shape
+        res = []
+        for row in range(a):
+            l = feature_maps[:, :, row*b:row*b+b]
+            f_tmp = np.hstack(np.transpose(l, (2, 0, 1)))
+            res.append(f_tmp)
+        fmap_image = np.vstack(res)
+        if is_display:
+            cv2.imshow("fmap", fmap_image)
+            cv2.waitKey(0)
+            cv2.destroyAllWindows()
+        if is_save:
+            cv2.imwrite("C:\\d\\diplomarbeit\\DA\\Figures\\fmap8.jpg", fmap_image)
+        fmap_images.append((fmap_image, info_minmax))
+    return fmap_images
+
+
+def image_to_feature_maps(images_info, shape=None, codec='jpg'):
+    '''
+    images: array of jpeg images and it's matadata in batch
+    shape:  rows and columns of feature maps allocation in jpeg image, 
+            (a, b): a rows and b columns feature maps in one jpeg image
+    '''
+    batch_size = len(images_info)
+    if not shape:
+        print("Shape is not provided")
+    rows, cols = shape
+    feature_maps = np.zeros(shape=(batch_size, 78, 78, 128))
+    cnt = 0
+    decoded_img = 0
+    for batch in range(batch_size):
+        if codec == 'jpg':
+            decoded_img = cv2.imdecode(images_info[batch][0], 0)
+        elif codec == 'dct':
+            decoded_img = cv2.idct(images_info[batch][0])
+        elif codec == 'webp':
+            decoded_img = cv2.imdecode(images_info[batch][0], 0)
+        minmax_info = images_info[batch][1]
+        tmp = np.zeros(shape=decoded_img.shape)
+        decoded_img = cv2.normalize(decoded_img, tmp, minmax_info[0], minmax_info[1], cv2.NORM_MINMAX, cv2.CV_32FC1)
+        tmp = np.vsplit(decoded_img, rows)
+        for row_data in tmp:
+            row_splitted = np.hsplit(row_data, cols)
+            for f_map in row_splitted:
+                feature_maps[batch, :, :, cnt] = f_map
+                cnt += 1
+        # assert cnt == 128
+        cnt = 0
+    return feature_maps
+
+
+def get_squared_image_of_feature_maps(fmaps, is_show=0, norm_range=None):
+    feature_maps = copy.copy(fmaps)
+    if norm_range:
+        feature_maps = (feature_maps - feature_maps.min()) * \
+            norm_range[1] / (feature_maps.max() -
+                             feature_maps.min()) + norm_range[0]
+    batch_size, width, height, channels = feature_maps.shape
+    # find proper lenth to get squared feature map
+    base = channels
+    while(1):
+        if np.power(int(np.sqrt(base)), 2) == base:
+            break
+        base += 1
+    num = int(np.sqrt(base))
+    # get squared image sliced by feature maps
+    shape_slice = (num, num)
+    # assert batchsize == 1
+    fmap_batch = feature_maps[0]
+    # fmap_batch_normalized = (fmap_batch - fmap_batch.min()) * \
+    #     1 / (fmap_batch.max() - fmap_batch.min()) + 0
+    res = np.zeros(shape=(num*width, num*height))
+    fmap_batch = np.transpose(fmap_batch, (2, 0, 1))
+    num_rest = channels
+    for row in range(num):
+        if num_rest == 0:
+            break
+        if num_rest > num:
+            l = fmap_batch[row*num:row*num+num, :, :]
+            num_rest -= num
+        else:
+            l = fmap_batch[row*num:row*num+num_rest, :, :]
+            zeros = np.zeros(shape=(num-num_rest, width, height))
+            l = np.concatenate((l, zeros), axis=0)
+            num_rest = 0
+        f_tmp = np.hstack(l)
+        res[row*height:(row*height+height)] = f_tmp
+    if is_show:
+        cv2.imshow("fmap", res)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
+    return res
+
+
+def squared_fmaps_image_to_fmaps(fmaps_img, shape=(1, 78, 78, 128)):
+    fmaps_img = copy.copy(fmaps_img)
+    height, width = fmaps_img.shape
+    feature_maps = np.zeros(shape=shape, dtype=np.float32)
+    s = 0
+    rest = shape[3]
+    rows = int(height / shape[1])
+    cols = int(width / shape[2])
+    rows_data = np.vsplit(fmaps_img, rows)
+    for idx, row in enumerate(rows_data):
+        s = idx*cols
+        e = idx*cols + cols
+        tmp = np.hsplit(row, cols)
+        if rest < cols:
+            feature_maps[0, :, :, s: s +
+                         rest] = np.array(tmp[0:rest]).transpose((1, 2, 0))
+            break
+        else:
+            feature_maps[0, :, :, s: e] = np.array(
+                tmp[0: cols]).transpose((1, 2, 0))
+        rest -= (e - s)
+    return feature_maps
+
+
+def jpeg_img_split(jpeg_img):
+    m, n = (78, 78)
+    jpeg_img_cp = copy.copy(jpeg_img)
+    decoded_img = cv2.imdecode(jpeg_img_cp, 0)
+    w, h = decoded_img.shape
+    rows = int(w / m)
+    cols = int(h / n)
+    res = np.zeros(shape=(rows*cols, m, n))
+    tmp = np.vsplit(decoded_img, rows)
+    cnt = 0
+    for row_data in tmp:
+        row_splitted = np.hsplit(row_data, cols)
+        for f_map in row_splitted:
+            res[cnt] = f_map
+            cnt += 1
+    return res
+
+
+# filters related funcs
+def get_filters(filters):
+    filters_data = copy.copy(filters)
+    filters_data = np.transpose(filters_data, (3, 2, 0, 1))
+    out_channels, in_channels, h, w = filters_data.shape
+    res = np.zeros(shape=(out_channels, h, w))
+    # get average of layers in filter
+    for index, filt in enumerate(filters_data):
+        dst = np.zeros(shape=(h, w))
+        for cur in filt:
+            dst = dst + cur
+        dst = dst / in_channels
+        res[index] = dst
+    res_normalized = (res - res.min()) * 255 / (res.max() - res.min()) + 0
+    return res_normalized
+
+
+def filters_clustering(filters, n_clusters=0):
+    filters_copy = copy.copy(filters)
+    num_filters, h, w = filters_copy.shape
+    filter_vecs = np.zeros(shape=(num_filters, h*w), dtype=np.uint8)
+    for i in range(num_filters):
+        filter_vecs[i] = filters_copy[i].reshape((1, h*w))
+    if n_clusters == 0:
+        return 0
+    kmeans = KMeans(n_clusters=n_clusters, verbose=0).fit(filter_vecs)
+    # print(np.reshape(kmeans.labels_, (8, 16)))
+    return kmeans.labels_
+
+
+def filters_clustering_quant(filters, n_clusters=0):
+    filters_copy = copy.copy(filters)
+    num_filters, num_layers, h, w = filters_copy.shape
+    filter_vecs = np.zeros(shape=(num_filters, h*w*num_layers))
+    for i in range(num_filters):
+        filter_vecs[i] = filters_copy[i].reshape((1, h*w*num_layers))
+    kmeans = KMeans(n_clusters=n_clusters, verbose=1).fit(filter_vecs)
+    print(np.reshape(kmeans.labels_, (8, 16)))
+    return kmeans.labels_
+
+
+def filters_quant(filters):
+    filters_data = copy.copy(filters.transpose((3, 2, 0, 1)))
+    # min_val, max_val = filters_data.min(), filters_data.max()
+    bins = np.arange(-1, 1, 0.005)
+    filters_data_quant = np.digitize(filters_data, bins)
+    return filters_data_quant
+
+def sort_fmaps(feature_maps, method):
+    """
+    @feature_maps: original float feature maps of shape (None, 78, 78, 128)
+    @method:
+        lum: Sort feature maps by luminance
+        random: random sort the feature maps
+        glcm: collect glcm features and cluster them
+    
+    return: dl: sorted list
+            fmaps: feature maps
+    """
+    fmaps = copy.copy(feature_maps)[0]
+    fmaps = (fmaps - fmaps.min()) * 255 / (fmaps.max() - fmaps.min())
+    fmaps = fmaps.astype(np.uint8).transpose((2, 0, 1))
+    d = {}
+    dl = []
+    num_clusters = 5
+    if method == 'lum':
+        for idx, fmap in enumerate(fmaps):
+            d[idx] = np.average(fmap)
+        dl = sorted(d.items(), key=lambda x: x[1], reverse=False)
+    if method == 'glcm':
+        res = np.zeros(shape=(len(fmaps), 6))
+        for idx, fmap in enumerate(fmaps):
+            fmap = (fmap // 32).astype(np.uint8)
+            g = greycomatrix(fmap, [1], [0, np.pi/4, np.pi/2,
+                                    3*np.pi/4], levels=8, symmetric=False, normed=True)
+            contrast = greycoprops(g, 'contrast')[0][0]
+            homo = greycoprops(g, 'homogeneity')[0][0]
+            corr = greycoprops(g, 'correlation')[0][0]
+            asm = greycoprops(g, 'ASM')[0][0]
+            dis = greycoprops(g, 'dissimilarity')[0][0]
+            entro = shannon_entropy(g)
+            res[idx] = np.array([homo, contrast, dis, entro, asm, corr])
+        kmeans = KMeans(n_clusters=num_clusters, random_state=0, verbose=0).fit(res)
+        labels = kmeans.labels_
+        d_cluster = {}
+        level_map = {}
+        for l in range(num_clusters):
+            tmp = np.where(labels==l)[0]
+            fmap_tmp = 0
+            sort_tmp = []
+            for idx in tmp:
+                sort_tmp.append((idx, np.mean(fmaps[idx])))
+                fmap_tmp += fmaps[idx]
+            sort_tmp = sorted(sort_tmp, key=lambda x: x[1])
+            fmap_tmp = fmap_tmp / len(tmp)
+            level = np.mean(fmap_tmp)
+            level_map[l] = level
+            d_cluster[l] = [index[0] for index in sort_tmp]
+        level_map_sorted = sorted(level_map.items(), key=lambda x: x[1])
+        level_map = {}
+        for index, level_map_info in enumerate(level_map_sorted):
+            level_map[index] = level_map_info[0]
+        cnt = 0
+        for i in range(num_clusters):
+            for j in d_cluster[i]:
+                dl.append((j, cnt))
+                cnt += 1
+    if method == 'random':
+        for idx in range(128):
+            d[idx] = idx
+        dl = list(d.items())
+        np.random.shuffle(dl)
+    return dl, fmaps
 
 
 # depreciated, using decode_result() instead

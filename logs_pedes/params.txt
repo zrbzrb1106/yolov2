@@ -1,0 +1,33 @@
+    layer     filters    size              input                output
+    0 conv     32  3x3/1   608x608x3    608x608x32  0.639 BFLOPs
+    1 max          2x2/2   608x608x32   304x304x32
+    2 conv     64  3x3/1   304x304x32   304x304x64  3.407 BFLOPs
+    3 max          2x2/2   304x304x64   152x152x64
+    4 conv    128  3x3/1   152x152x64   152x152x128  3.407 BFLOPs
+    5 conv     64  1x1/1   152x152x128  152x152x64  0.379 BFLOPs
+    6 conv    128  3x3/1   152x152x64   152x152x128  3.407 BFLOPs
+    7 max          2x2/2   152x152x128   76x76x128
+    8 conv    256  3x3/1    76x76x128    76x76x256  3.407 BFLOPs
+    9 conv    128  1x1/1    76x76x256     76x76x128  0.379 BFLOPs
+   10 conv    256  3x3/1    76x76x128    76x76x256  3.407 BFLOPs
+   11 max          2x2/2    76x76x256    38x38x256
+   12 conv    512  3x3/1    38x38x256    38x38x512  3.407 BFLOPs
+   13 conv    256  1x1/1    38x38x512    38x38x256  0.379 BFLOPs
+   14 conv    512  3x3/1    38x38x256    38x38x512  3.407 BFLOPs
+   15 conv    256  1x1/1    38x38x512    38x38x256  0.379 BFLOPs
+   16 conv    512  3x3/1    38x38x256    38x38x512  3.407 BFLOPs
+   17 max          2x2/2    38x38x512    19x19x512
+   18 conv   1024  3x3/1    19x19x512    19x19x1024  3.407 BFLOPs
+   19 conv    512  1x1/1    19x19x1024    19x19x512  0.379 BFLOPs
+   20 conv   1024  3x3/1    19x19x512    19x19x1024  3.407 BFLOPs
+   21 conv    512  1x1/1    19x19x1024    19x19x512  0.379 BFLOPs
+   22 conv   1024  3x3/1    19x19x512    19x19x1024  3.407 BFLOPs
+   23 conv   1024  3x3/1    19x19x1024    19x19x1024  6.814 BFLOPs
+   24 conv   1024  3x3/1    19x19x1024    19x19x1024  6.814 BFLOPs
+   25 route  16
+   26 conv   64  1x1/1    38x38x512   38x38x64  0.095 BFLOPs
+   27 reorg  /2  38x38x64   19x19x256
+   28 route  27  24
+   29 conv   1024  3x3/1    19x19x1280   19x19x1024  8.517 BFLOPs
+   30 conv    425  1x1/1    19x19x1024   19x19x425  0.314 BFLOPs
+   31 detection

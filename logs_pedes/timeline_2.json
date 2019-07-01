@@ -1,0 +1,2676 @@
+{
+    "traceEvents": [
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 0,
+            "args": {
+                "name": "Allocators"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 1,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 2,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Tensors"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "NoOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690020,
+            "dur": 112,
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690140,
+            "dur": 7,
+            "args": {
+                "name": "batch_normalization_5/Const_5",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690149,
+            "dur": 4,
+            "args": {
+                "name": "batch_normalization_5/beta",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690154,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_5/gamma",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690156,
+            "dur": 2,
+            "args": {
+                "name": "conv2d_5/kernel",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690159,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_4/beta",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690162,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_4/gamma",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690164,
+            "dur": 2,
+            "args": {
+                "name": "conv2d_4/kernel",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690167,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_3/beta",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714690169,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_3/gamma",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690172,
+            "dur": 3,
+            "args": {
+                "name": "conv2d_3/kernel",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690176,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_2/beta",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690179,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_2/gamma",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714690181,
+            "dur": 3,
+            "args": {
+                "name": "conv2d_2/kernel",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690185,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_1/beta",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690188,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_1/gamma",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690191,
+            "dur": 2,
+            "args": {
+                "name": "conv2d_1/kernel",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690195,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_1/moving_variance",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690197,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_1/moving_mean",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690200,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_2/moving_variance",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690203,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_2/moving_mean",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690206,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_3/moving_variance",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690208,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_3/moving_mean",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690211,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_4/moving_variance",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690214,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_4/moving_mean",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690216,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_5/moving_variance",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690219,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_5/moving_mean",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Arg",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714690221,
+            "dur": 4,
+            "args": {
+                "name": "_arg_input_1_0_0",
+                "op": "_Arg"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690226,
+            "dur": 4,
+            "args": {
+                "name": "keras_learning_phase/_72__cf__0",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690232,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_0",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690236,
+            "dur": 3,
+            "args": {
+                "name": "batch_normalization_1/cond/FusedBatchNorm/Switch_4",
+                "op": "Switch",
+                "input0": "batch_normalization_1/moving_variance",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690241,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_1/cond/FusedBatchNorm/Switch_3",
+                "op": "Switch",
+                "input0": "batch_normalization_1/moving_mean",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690243,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_1/cond/FusedBatchNorm/Switch_2",
+                "op": "Switch",
+                "input0": "batch_normalization_1/beta",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690246,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_1/cond/FusedBatchNorm/Switch_1",
+                "op": "Switch",
+                "input0": "batch_normalization_1/gamma",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690249,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_2/cond/FusedBatchNorm/Switch_4",
+                "op": "Switch",
+                "input0": "batch_normalization_2/moving_variance",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690252,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_2/cond/FusedBatchNorm/Switch_3",
+                "op": "Switch",
+                "input0": "batch_normalization_2/moving_mean",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690254,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_2/cond/FusedBatchNorm/Switch_2",
+                "op": "Switch",
+                "input0": "batch_normalization_2/beta",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690256,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_2/cond/FusedBatchNorm/Switch_1",
+                "op": "Switch",
+                "input0": "batch_normalization_2/gamma",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690259,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_3/cond/FusedBatchNorm/Switch_4",
+                "op": "Switch",
+                "input0": "batch_normalization_3/moving_variance",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690262,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_3/cond/FusedBatchNorm/Switch_3",
+                "op": "Switch",
+                "input0": "batch_normalization_3/moving_mean",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690264,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_3/cond/FusedBatchNorm/Switch_2",
+                "op": "Switch",
+                "input0": "batch_normalization_3/beta",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690266,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_3/cond/FusedBatchNorm/Switch_1",
+                "op": "Switch",
+                "input0": "batch_normalization_3/gamma",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "batch_normalization_3/gamma",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714690171,
+            "id": 0
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "batch_normalization_3/gamma",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690266,
+            "id": 0
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690269,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_4/cond/FusedBatchNorm/Switch_4",
+                "op": "Switch",
+                "input0": "batch_normalization_4/moving_variance",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690271,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_4/cond/FusedBatchNorm/Switch_3",
+                "op": "Switch",
+                "input0": "batch_normalization_4/moving_mean",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690274,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_4/cond/FusedBatchNorm/Switch_2",
+                "op": "Switch",
+                "input0": "batch_normalization_4/beta",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690276,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_4/cond/FusedBatchNorm/Switch_1",
+                "op": "Switch",
+                "input0": "batch_normalization_4/gamma",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690278,
+            "dur": 2,
+            "args": {
+                "name": "batch_normalization_5/cond/FusedBatchNorm/Switch_4",
+                "op": "Switch",
+                "input0": "batch_normalization_5/moving_variance",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690281,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_5/cond/FusedBatchNorm/Switch_3",
+                "op": "Switch",
+                "input0": "batch_normalization_5/moving_mean",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690283,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_5/cond/FusedBatchNorm/Switch_2",
+                "op": "Switch",
+                "input0": "batch_normalization_5/beta",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690286,
+            "dur": 1,
+            "args": {
+                "name": "batch_normalization_5/cond/FusedBatchNorm/Switch_1",
+                "op": "Switch",
+                "input0": "batch_normalization_5/gamma",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690289,
+            "dur": 8812,
+            "args": {
+                "name": "conv2d_1/convolution",
+                "op": "_MklConv2D",
+                "input0": "_arg_input_1_0_0",
+                "input1": "conv2d_1/kernel",
+                "input2": "DMT/_0",
+                "input3": "DMT/_1"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "_arg_input_1_0_0",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714690225,
+            "id": 1
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "_arg_input_1_0_0",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690289,
+            "id": 1
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714699121,
+            "dur": 6,
+            "args": {
+                "name": "DMT/_7",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714699128,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_8",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714699131,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_9",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714699134,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_10",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedBatchNorm",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714699137,
+            "dur": 13176,
+            "args": {
+                "name": "batch_normalization_1/FusedBatchNorm",
+                "op": "_MklFusedBatchNorm",
+                "input0": "conv2d_1/convolution",
+                "input1": "batch_normalization_1/gamma",
+                "input2": "batch_normalization_1/beta",
+                "input3": "batch_normalization_5/Const_5",
+                "input4": "batch_normalization_5/Const_5",
+                "input5": "conv2d_1/convolution:2",
+                "input6": "DMT/_7",
+                "input7": "DMT/_8",
+                "input8": "DMT/_9",
+                "input9": "DMT/_10"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_9",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714699133,
+            "id": 2
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_9",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714699137,
+            "id": 2
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714712326,
+            "dur": 10143,
+            "args": {
+                "name": "Mkl2Tf/_58",
+                "op": "_MklToTf",
+                "input0": "batch_normalization_1/FusedBatchNorm",
+                "input1": "batch_normalization_1/FusedBatchNorm:5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714722483,
+            "dur": 6,
+            "args": {
+                "name": "batch_normalization_1/cond/Switch_1",
+                "op": "Switch",
+                "input0": "batch_normalization_1/FusedBatchNorm",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714722492,
+            "dur": 10237,
+            "args": {
+                "name": "Mkl2Tf/_56",
+                "op": "_MklToTf",
+                "input0": "conv2d_1/convolution",
+                "input1": "conv2d_1/convolution:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714732741,
+            "dur": 5,
+            "args": {
+                "name": "batch_normalization_1/cond/FusedBatchNorm/Switch",
+                "op": "Switch",
+                "input0": "conv2d_1/convolution",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714732748,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_2",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714732752,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_3",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714732755,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_4",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714732758,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_5",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714732761,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_6",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedBatchNorm",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714732765,
+            "dur": 26518,
+            "args": {
+                "name": "batch_normalization_1/cond/FusedBatchNorm",
+                "op": "_MklFusedBatchNorm",
+                "input0": "batch_normalization_1/cond/FusedBatchNorm/Switch",
+                "input1": "batch_normalization_1/cond/FusedBatchNorm/Switch_1",
+                "input2": "batch_normalization_1/cond/FusedBatchNorm/Switch_2",
+                "input3": "batch_normalization_1/cond/FusedBatchNorm/Switch_3",
+                "input4": "batch_normalization_1/cond/FusedBatchNorm/Switch_4",
+                "input5": "DMT/_2",
+                "input6": "DMT/_3",
+                "input7": "DMT/_4",
+                "input8": "DMT/_5",
+                "input9": "DMT/_6"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714759301,
+            "dur": 10283,
+            "args": {
+                "name": "Mkl2Tf/_57",
+                "op": "_MklToTf",
+                "input0": "batch_normalization_1/cond/FusedBatchNorm",
+                "input1": "batch_normalization_1/cond/FusedBatchNorm:5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Merge",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714769596,
+            "dur": 10,
+            "args": {
+                "name": "batch_normalization_1/cond/Merge",
+                "op": "Merge",
+                "input0": "batch_normalization_1/cond/FusedBatchNorm",
+                "input1": "batch_normalization_1/cond/Switch_1:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714769608,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_11",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklLeakyRelu",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714769614,
+            "dur": 7067,
+            "args": {
+                "name": "leaky_re_lu_1/LeakyRelu",
+                "op": "_MklLeakyRelu",
+                "input0": "batch_normalization_1/cond/Merge",
+                "input1": "DMT/_11"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMaxPool",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714776685,
+            "dur": 24514,
+            "args": {
+                "name": "max_pooling2d_1/MaxPool",
+                "op": "_MklMaxPool",
+                "input0": "leaky_re_lu_1/LeakyRelu",
+                "input1": "leaky_re_lu_1/LeakyRelu:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714801215,
+            "dur": 6,
+            "args": {
+                "name": "DMT/_12",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714801222,
+            "dur": 27631,
+            "args": {
+                "name": "conv2d_2/convolution",
+                "op": "_MklConv2D",
+                "input0": "max_pooling2d_1/MaxPool",
+                "input1": "conv2d_2/kernel",
+                "input2": "max_pooling2d_1/MaxPool:2",
+                "input3": "DMT/_12"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "conv2d_2/kernel",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714690184,
+            "id": 3
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "conv2d_2/kernel",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714801222,
+            "id": 3
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714828871,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_13",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714828878,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_14",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714828880,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_15",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714828883,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_16",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedBatchNorm",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714828886,
+            "dur": 4515,
+            "args": {
+                "name": "batch_normalization_2/FusedBatchNorm",
+                "op": "_MklFusedBatchNorm",
+                "input0": "conv2d_2/convolution",
+                "input1": "batch_normalization_2/gamma",
+                "input2": "batch_normalization_2/beta",
+                "input3": "batch_normalization_5/Const_5",
+                "input4": "batch_normalization_5/Const_5",
+                "input5": "conv2d_2/convolution:2",
+                "input6": "DMT/_13",
+                "input7": "DMT/_14",
+                "input8": "DMT/_15",
+                "input9": "DMT/_16"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714833417,
+            "dur": 5214,
+            "args": {
+                "name": "Mkl2Tf/_60",
+                "op": "_MklToTf",
+                "input0": "batch_normalization_2/FusedBatchNorm",
+                "input1": "batch_normalization_2/FusedBatchNorm:5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714838644,
+            "dur": 6,
+            "args": {
+                "name": "batch_normalization_2/cond/Switch_1",
+                "op": "Switch",
+                "input0": "batch_normalization_2/FusedBatchNorm",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714838653,
+            "dur": 5203,
+            "args": {
+                "name": "Mkl2Tf/_59",
+                "op": "_MklToTf",
+                "input0": "conv2d_2/convolution",
+                "input1": "conv2d_2/convolution:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714843869,
+            "dur": 4,
+            "args": {
+                "name": "batch_normalization_2/cond/FusedBatchNorm/Switch",
+                "op": "Switch",
+                "input0": "conv2d_2/convolution",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714843875,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_17",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714843880,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_18",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714843883,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_19",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714843886,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_20",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714843889,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_21",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedBatchNorm",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714843891,
+            "dur": 15943,
+            "args": {
+                "name": "batch_normalization_2/cond/FusedBatchNorm",
+                "op": "_MklFusedBatchNorm",
+                "input0": "batch_normalization_2/cond/FusedBatchNorm/Switch",
+                "input1": "batch_normalization_2/cond/FusedBatchNorm/Switch_1",
+                "input2": "batch_normalization_2/cond/FusedBatchNorm/Switch_2",
+                "input3": "batch_normalization_2/cond/FusedBatchNorm/Switch_3",
+                "input4": "batch_normalization_2/cond/FusedBatchNorm/Switch_4",
+                "input5": "DMT/_17",
+                "input6": "DMT/_18",
+                "input7": "DMT/_19",
+                "input8": "DMT/_20",
+                "input9": "DMT/_21"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714859852,
+            "dur": 5278,
+            "args": {
+                "name": "Mkl2Tf/_61",
+                "op": "_MklToTf",
+                "input0": "batch_normalization_2/cond/FusedBatchNorm",
+                "input1": "batch_normalization_2/cond/FusedBatchNorm:5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Merge",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714865143,
+            "dur": 10,
+            "args": {
+                "name": "batch_normalization_2/cond/Merge",
+                "op": "Merge",
+                "input0": "batch_normalization_2/cond/FusedBatchNorm",
+                "input1": "batch_normalization_2/cond/Switch_1:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714865155,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_22",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklLeakyRelu",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714865160,
+            "dur": 3510,
+            "args": {
+                "name": "leaky_re_lu_2/LeakyRelu",
+                "op": "_MklLeakyRelu",
+                "input0": "batch_normalization_2/cond/Merge",
+                "input1": "DMT/_22"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMaxPool",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714868674,
+            "dur": 14988,
+            "args": {
+                "name": "max_pooling2d_2/MaxPool",
+                "op": "_MklMaxPool",
+                "input0": "leaky_re_lu_2/LeakyRelu",
+                "input1": "leaky_re_lu_2/LeakyRelu:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714883678,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_23",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714883684,
+            "dur": 27894,
+            "args": {
+                "name": "conv2d_3/convolution",
+                "op": "_MklConv2D",
+                "input0": "max_pooling2d_2/MaxPool",
+                "input1": "conv2d_3/kernel",
+                "input2": "max_pooling2d_2/MaxPool:2",
+                "input3": "DMT/_23"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714911597,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_24",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714911603,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_25",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714911606,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_26",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714911608,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_27",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedBatchNorm",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714911610,
+            "dur": 2320,
+            "args": {
+                "name": "batch_normalization_3/FusedBatchNorm",
+                "op": "_MklFusedBatchNorm",
+                "input0": "conv2d_3/convolution",
+                "input1": "batch_normalization_3/gamma",
+                "input2": "batch_normalization_3/beta",
+                "input3": "batch_normalization_5/Const_5",
+                "input4": "batch_normalization_5/Const_5",
+                "input5": "conv2d_3/convolution:2",
+                "input6": "DMT/_24",
+                "input7": "DMT/_25",
+                "input8": "DMT/_26",
+                "input9": "DMT/_27"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "conv2d_3/convolution",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714911578,
+            "id": 4
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "conv2d_3/convolution",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714911610,
+            "id": 4
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "batch_normalization_3/beta",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690169,
+            "id": 5
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "batch_normalization_3/beta",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714911610,
+            "id": 5
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "batch_normalization_5/Const_5",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690147,
+            "id": 6
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "batch_normalization_5/Const_5",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714911610,
+            "id": 6
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "batch_normalization_5/Const_5",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714690147,
+            "id": 7
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "batch_normalization_5/Const_5",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714911610,
+            "id": 7
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "conv2d_3/convolution:2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714911578,
+            "id": 8
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "conv2d_3/convolution:2",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714911610,
+            "id": 8
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_24",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714911602,
+            "id": 9
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_24",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714911610,
+            "id": 9
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_25",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714911605,
+            "id": 10
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_25",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714911610,
+            "id": 10
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_26",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714911607,
+            "id": 11
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_26",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714911610,
+            "id": 11
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_27",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714911610,
+            "id": 12
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_27",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714911610,
+            "id": 12
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714913942,
+            "dur": 2685,
+            "args": {
+                "name": "Mkl2Tf/_63",
+                "op": "_MklToTf",
+                "input0": "batch_normalization_3/FusedBatchNorm",
+                "input1": "batch_normalization_3/FusedBatchNorm:5"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "batch_normalization_3/FusedBatchNorm",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714913930,
+            "id": 13
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "batch_normalization_3/FusedBatchNorm",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714913942,
+            "id": 13
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "batch_normalization_3/FusedBatchNorm:5",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714913930,
+            "id": 14
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "batch_normalization_3/FusedBatchNorm:5",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714913942,
+            "id": 14
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714916637,
+            "dur": 6,
+            "args": {
+                "name": "batch_normalization_3/cond/Switch_1",
+                "op": "Switch",
+                "input0": "batch_normalization_3/FusedBatchNorm",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "batch_normalization_3/FusedBatchNorm",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714913930,
+            "id": 15
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "batch_normalization_3/FusedBatchNorm",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714916637,
+            "id": 15
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714916646,
+            "dur": 2657,
+            "args": {
+                "name": "Mkl2Tf/_62",
+                "op": "_MklToTf",
+                "input0": "conv2d_3/convolution",
+                "input1": "conv2d_3/convolution:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714919313,
+            "dur": 4,
+            "args": {
+                "name": "batch_normalization_3/cond/FusedBatchNorm/Switch",
+                "op": "Switch",
+                "input0": "conv2d_3/convolution",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714919319,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_28",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714919324,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_29",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714919327,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_30",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714919329,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_31",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714919332,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_32",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedBatchNorm",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714919334,
+            "dur": 7241,
+            "args": {
+                "name": "batch_normalization_3/cond/FusedBatchNorm",
+                "op": "_MklFusedBatchNorm",
+                "input0": "batch_normalization_3/cond/FusedBatchNorm/Switch",
+                "input1": "batch_normalization_3/cond/FusedBatchNorm/Switch_1",
+                "input2": "batch_normalization_3/cond/FusedBatchNorm/Switch_2",
+                "input3": "batch_normalization_3/cond/FusedBatchNorm/Switch_3",
+                "input4": "batch_normalization_3/cond/FusedBatchNorm/Switch_4",
+                "input5": "DMT/_28",
+                "input6": "DMT/_29",
+                "input7": "DMT/_30",
+                "input8": "DMT/_31",
+                "input9": "DMT/_32"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714926592,
+            "dur": 2531,
+            "args": {
+                "name": "Mkl2Tf/_64",
+                "op": "_MklToTf",
+                "input0": "batch_normalization_3/cond/FusedBatchNorm",
+                "input1": "batch_normalization_3/cond/FusedBatchNorm:5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Merge",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714929135,
+            "dur": 9,
+            "args": {
+                "name": "batch_normalization_3/cond/Merge",
+                "op": "Merge",
+                "input0": "batch_normalization_3/cond/FusedBatchNorm",
+                "input1": "batch_normalization_3/cond/Switch_1:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714929146,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_33",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklLeakyRelu",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714929151,
+            "dur": 1639,
+            "args": {
+                "name": "leaky_re_lu_3/LeakyRelu",
+                "op": "_MklLeakyRelu",
+                "input0": "batch_normalization_3/cond/Merge",
+                "input1": "DMT/_33"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714930794,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_34",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714930799,
+            "dur": 8909,
+            "args": {
+                "name": "conv2d_4/convolution",
+                "op": "_MklConv2D",
+                "input0": "leaky_re_lu_3/LeakyRelu",
+                "input1": "conv2d_4/kernel",
+                "input2": "leaky_re_lu_3/LeakyRelu:1",
+                "input3": "DMT/_34"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714939726,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_35",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714939733,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_36",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714939735,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_37",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714939738,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_38",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedBatchNorm",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714939741,
+            "dur": 1238,
+            "args": {
+                "name": "batch_normalization_4/FusedBatchNorm",
+                "op": "_MklFusedBatchNorm",
+                "input0": "conv2d_4/convolution",
+                "input1": "batch_normalization_4/gamma",
+                "input2": "batch_normalization_4/beta",
+                "input3": "batch_normalization_5/Const_5",
+                "input4": "batch_normalization_5/Const_5",
+                "input5": "conv2d_4/convolution:2",
+                "input6": "DMT/_35",
+                "input7": "DMT/_36",
+                "input8": "DMT/_37",
+                "input9": "DMT/_38"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_37",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714939737,
+            "id": 16
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_37",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714939741,
+            "id": 16
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714940990,
+            "dur": 1383,
+            "args": {
+                "name": "Mkl2Tf/_66",
+                "op": "_MklToTf",
+                "input0": "batch_normalization_4/FusedBatchNorm",
+                "input1": "batch_normalization_4/FusedBatchNorm:5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714942383,
+            "dur": 6,
+            "args": {
+                "name": "batch_normalization_4/cond/Switch_1",
+                "op": "Switch",
+                "input0": "batch_normalization_4/FusedBatchNorm",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714942392,
+            "dur": 1272,
+            "args": {
+                "name": "Mkl2Tf/_65",
+                "op": "_MklToTf",
+                "input0": "conv2d_4/convolution",
+                "input1": "conv2d_4/convolution:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714943673,
+            "dur": 4,
+            "args": {
+                "name": "batch_normalization_4/cond/FusedBatchNorm/Switch",
+                "op": "Switch",
+                "input0": "conv2d_4/convolution",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714943679,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_39",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714943684,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_40",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714943686,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_41",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714943689,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_42",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714943693,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_43",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedBatchNorm",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714943696,
+            "dur": 3343,
+            "args": {
+                "name": "batch_normalization_4/cond/FusedBatchNorm",
+                "op": "_MklFusedBatchNorm",
+                "input0": "batch_normalization_4/cond/FusedBatchNorm/Switch",
+                "input1": "batch_normalization_4/cond/FusedBatchNorm/Switch_1",
+                "input2": "batch_normalization_4/cond/FusedBatchNorm/Switch_2",
+                "input3": "batch_normalization_4/cond/FusedBatchNorm/Switch_3",
+                "input4": "batch_normalization_4/cond/FusedBatchNorm/Switch_4",
+                "input5": "DMT/_39",
+                "input6": "DMT/_40",
+                "input7": "DMT/_41",
+                "input8": "DMT/_42",
+                "input9": "DMT/_43"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_41",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714943688,
+            "id": 17
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_41",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714943696,
+            "id": 17
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714947056,
+            "dur": 1140,
+            "args": {
+                "name": "Mkl2Tf/_67",
+                "op": "_MklToTf",
+                "input0": "batch_normalization_4/cond/FusedBatchNorm",
+                "input1": "batch_normalization_4/cond/FusedBatchNorm:5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Merge",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714948206,
+            "dur": 9,
+            "args": {
+                "name": "batch_normalization_4/cond/Merge",
+                "op": "Merge",
+                "input0": "batch_normalization_4/cond/FusedBatchNorm",
+                "input1": "batch_normalization_4/cond/Switch_1:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714948218,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_44",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklLeakyRelu",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714948223,
+            "dur": 669,
+            "args": {
+                "name": "leaky_re_lu_4/LeakyRelu",
+                "op": "_MklLeakyRelu",
+                "input0": "batch_normalization_4/cond/Merge",
+                "input1": "DMT/_44"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714948896,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_45",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714948901,
+            "dur": 31349,
+            "args": {
+                "name": "conv2d_5/convolution",
+                "op": "_MklConv2D",
+                "input0": "leaky_re_lu_4/LeakyRelu",
+                "input1": "conv2d_5/kernel",
+                "input2": "leaky_re_lu_4/LeakyRelu:1",
+                "input3": "DMT/_45"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714980268,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_46",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714980274,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_47",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714980277,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_48",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714980279,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_49",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedBatchNorm",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714980282,
+            "dur": 2252,
+            "args": {
+                "name": "batch_normalization_5/FusedBatchNorm",
+                "op": "_MklFusedBatchNorm",
+                "input0": "conv2d_5/convolution",
+                "input1": "batch_normalization_5/gamma",
+                "input2": "batch_normalization_5/beta",
+                "input3": "batch_normalization_5/Const_5",
+                "input4": "batch_normalization_5/Const_5",
+                "input5": "conv2d_5/convolution:2",
+                "input6": "DMT/_46",
+                "input7": "DMT/_47",
+                "input8": "DMT/_48",
+                "input9": "DMT/_49"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714982546,
+            "dur": 2603,
+            "args": {
+                "name": "Mkl2Tf/_69",
+                "op": "_MklToTf",
+                "input0": "batch_normalization_5/FusedBatchNorm",
+                "input1": "batch_normalization_5/FusedBatchNorm:5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714985161,
+            "dur": 6,
+            "args": {
+                "name": "batch_normalization_5/cond/Switch_1",
+                "op": "Switch",
+                "input0": "batch_normalization_5/FusedBatchNorm",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714985169,
+            "dur": 2565,
+            "args": {
+                "name": "Mkl2Tf/_68",
+                "op": "_MklToTf",
+                "input0": "conv2d_5/convolution",
+                "input1": "conv2d_5/convolution:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Switch",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714987744,
+            "dur": 4,
+            "args": {
+                "name": "batch_normalization_5/cond/FusedBatchNorm/Switch",
+                "op": "Switch",
+                "input0": "conv2d_5/convolution",
+                "input1": "keras_learning_phase"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714987749,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_50",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714987754,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_51",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714987756,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_52",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714987759,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_53",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714987761,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_54",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedBatchNorm",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714987764,
+            "dur": 6912,
+            "args": {
+                "name": "batch_normalization_5/cond/FusedBatchNorm",
+                "op": "_MklFusedBatchNorm",
+                "input0": "batch_normalization_5/cond/FusedBatchNorm/Switch",
+                "input1": "batch_normalization_5/cond/FusedBatchNorm/Switch_1",
+                "input2": "batch_normalization_5/cond/FusedBatchNorm/Switch_2",
+                "input3": "batch_normalization_5/cond/FusedBatchNorm/Switch_3",
+                "input4": "batch_normalization_5/cond/FusedBatchNorm/Switch_4",
+                "input5": "DMT/_50",
+                "input6": "DMT/_51",
+                "input7": "DMT/_52",
+                "input8": "DMT/_53",
+                "input9": "DMT/_54"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_54",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558533714987763,
+            "id": 18
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_54",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714987764,
+            "id": 18
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714994694,
+            "dur": 2505,
+            "args": {
+                "name": "Mkl2Tf/_70",
+                "op": "_MklToTf",
+                "input0": "batch_normalization_5/cond/FusedBatchNorm",
+                "input1": "batch_normalization_5/cond/FusedBatchNorm:5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Merge",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714997212,
+            "dur": 9,
+            "args": {
+                "name": "batch_normalization_5/cond/Merge",
+                "op": "Merge",
+                "input0": "batch_normalization_5/cond/FusedBatchNorm",
+                "input1": "batch_normalization_5/cond/Switch_1:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714997223,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_55",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklLeakyRelu",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714997229,
+            "dur": 1645,
+            "args": {
+                "name": "leaky_re_lu_5/LeakyRelu",
+                "op": "_MklLeakyRelu",
+                "input0": "batch_normalization_5/cond/Merge",
+                "input1": "DMT/_55"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMaxPool",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533714998878,
+            "dur": 6496,
+            "args": {
+                "name": "max_pooling2d_3/MaxPool",
+                "op": "_MklMaxPool",
+                "input0": "leaky_re_lu_5/LeakyRelu",
+                "input1": "leaky_re_lu_5/LeakyRelu:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533715005390,
+            "dur": 639,
+            "args": {
+                "name": "Mkl2Tf/_71",
+                "op": "_MklToTf",
+                "input0": "max_pooling2d_3/MaxPool",
+                "input1": "max_pooling2d_3/MaxPool:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Retval",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558533715006037,
+            "dur": 6,
+            "args": {
+                "name": "_retval_max_pooling2d_3/MaxPool_0_0",
+                "op": "_Retval",
+                "input0": "max_pooling2d_3/MaxPool"
+            }
+        }
+    ]
+}

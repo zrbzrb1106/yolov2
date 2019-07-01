@@ -1,8 +1,11 @@
 #! /bin/bash
 
-echo "Installing Python3..."
-sh ./install_python.sh
+# echo "Installing Python3..."
+# sh ./install_python.sh
 echo "Installing OpenCV..."
-sh ./install_opencv3.sh
+apt-get update
+apt-get -y install libgtk2.0-dev
+python3 -m pip install opencv-python
+
 echo "Installing Tensorflow..."
-sh ./install_tensorflow.sh
+conda install tensorflow -c anaconda

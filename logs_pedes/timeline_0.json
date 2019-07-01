@@ -1,0 +1,5553 @@
+{
+    "traceEvents": [
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 0,
+            "args": {
+                "name": "Allocators"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 1,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 2,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Tensors"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "NoOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433613,
+            "dur": 11,
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433630,
+            "dur": 8,
+            "args": {
+                "name": "13-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433639,
+            "dur": 2,
+            "args": {
+                "name": "sub_5/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433641,
+            "dur": 2,
+            "args": {
+                "name": "truediv_5/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433643,
+            "dur": 2,
+            "args": {
+                "name": "mul_10/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433645,
+            "dur": 2,
+            "args": {
+                "name": "BiasAdd_5/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433647,
+            "dur": 2,
+            "args": {
+                "name": "mul_11/x",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433650,
+            "dur": 2,
+            "args": {
+                "name": "Pad_6/paddings",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433652,
+            "dur": 2,
+            "args": {
+                "name": "15-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433655,
+            "dur": 2,
+            "args": {
+                "name": "sub_6/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433659,
+            "dur": 1,
+            "args": {
+                "name": "truediv_6/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433661,
+            "dur": 1,
+            "args": {
+                "name": "mul_12/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433663,
+            "dur": 1,
+            "args": {
+                "name": "BiasAdd_6/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433665,
+            "dur": 1,
+            "args": {
+                "name": "Pad_7/paddings",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433668,
+            "dur": 2,
+            "args": {
+                "name": "17-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433671,
+            "dur": 1,
+            "args": {
+                "name": "sub_7/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433672,
+            "dur": 2,
+            "args": {
+                "name": "truediv_7/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433675,
+            "dur": 1,
+            "args": {
+                "name": "mul_14/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433678,
+            "dur": 1,
+            "args": {
+                "name": "BiasAdd_7/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433680,
+            "dur": 2,
+            "args": {
+                "name": "20-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433683,
+            "dur": 1,
+            "args": {
+                "name": "sub_8/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433685,
+            "dur": 1,
+            "args": {
+                "name": "truediv_8/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433688,
+            "dur": 1,
+            "args": {
+                "name": "mul_16/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433690,
+            "dur": 1,
+            "args": {
+                "name": "BiasAdd_8/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433692,
+            "dur": 2,
+            "args": {
+                "name": "22-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433694,
+            "dur": 2,
+            "args": {
+                "name": "sub_9/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433697,
+            "dur": 2,
+            "args": {
+                "name": "truediv_9/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433699,
+            "dur": 2,
+            "args": {
+                "name": "mul_18/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433702,
+            "dur": 1,
+            "args": {
+                "name": "BiasAdd_9/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433704,
+            "dur": 1,
+            "args": {
+                "name": "24-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433707,
+            "dur": 1,
+            "args": {
+                "name": "sub_10/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433709,
+            "dur": 2,
+            "args": {
+                "name": "truediv_10/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433711,
+            "dur": 2,
+            "args": {
+                "name": "mul_20/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433714,
+            "dur": 1,
+            "args": {
+                "name": "BiasAdd_10/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433717,
+            "dur": 2,
+            "args": {
+                "name": "26-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433720,
+            "dur": 1,
+            "args": {
+                "name": "sub_11/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433722,
+            "dur": 1,
+            "args": {
+                "name": "truediv_11/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433724,
+            "dur": 1,
+            "args": {
+                "name": "mul_22/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433727,
+            "dur": 1,
+            "args": {
+                "name": "BiasAdd_11/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433729,
+            "dur": 2,
+            "args": {
+                "name": "28-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433731,
+            "dur": 2,
+            "args": {
+                "name": "sub_12/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433733,
+            "dur": 2,
+            "args": {
+                "name": "truediv_12/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433735,
+            "dur": 4,
+            "args": {
+                "name": "mul_24/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433740,
+            "dur": 1,
+            "args": {
+                "name": "BiasAdd_12/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433742,
+            "dur": 2,
+            "args": {
+                "name": "31-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433744,
+            "dur": 2,
+            "args": {
+                "name": "sub_13/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433746,
+            "dur": 3,
+            "args": {
+                "name": "truediv_13/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433749,
+            "dur": 2,
+            "args": {
+                "name": "mul_26/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433751,
+            "dur": 2,
+            "args": {
+                "name": "BiasAdd_13/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433753,
+            "dur": 2,
+            "args": {
+                "name": "33-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433756,
+            "dur": 2,
+            "args": {
+                "name": "sub_14/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433759,
+            "dur": 1,
+            "args": {
+                "name": "truediv_14/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433761,
+            "dur": 1,
+            "args": {
+                "name": "mul_28/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433763,
+            "dur": 1,
+            "args": {
+                "name": "BiasAdd_14/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433765,
+            "dur": 3,
+            "args": {
+                "name": "35-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433768,
+            "dur": 2,
+            "args": {
+                "name": "sub_15/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433770,
+            "dur": 2,
+            "args": {
+                "name": "truediv_15/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433772,
+            "dur": 2,
+            "args": {
+                "name": "mul_30/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433774,
+            "dur": 3,
+            "args": {
+                "name": "BiasAdd_15/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433778,
+            "dur": 1,
+            "args": {
+                "name": "37-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433780,
+            "dur": 1,
+            "args": {
+                "name": "sub_16/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433782,
+            "dur": 1,
+            "args": {
+                "name": "truediv_16/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433784,
+            "dur": 2,
+            "args": {
+                "name": "mul_32/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433787,
+            "dur": 1,
+            "args": {
+                "name": "BiasAdd_16/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433789,
+            "dur": 2,
+            "args": {
+                "name": "39-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433792,
+            "dur": 1,
+            "args": {
+                "name": "sub_17/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433795,
+            "dur": 2,
+            "args": {
+                "name": "truediv_17/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433798,
+            "dur": 1,
+            "args": {
+                "name": "mul_34/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433800,
+            "dur": 1,
+            "args": {
+                "name": "BiasAdd_17/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433802,
+            "dur": 1,
+            "args": {
+                "name": "41-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433804,
+            "dur": 3,
+            "args": {
+                "name": "sub_18/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433807,
+            "dur": 2,
+            "args": {
+                "name": "truediv_18/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433809,
+            "dur": 2,
+            "args": {
+                "name": "mul_36/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433811,
+            "dur": 2,
+            "args": {
+                "name": "BiasAdd_18/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433813,
+            "dur": 3,
+            "args": {
+                "name": "43-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433817,
+            "dur": 1,
+            "args": {
+                "name": "sub_19/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433819,
+            "dur": 1,
+            "args": {
+                "name": "truediv_19/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433821,
+            "dur": 1,
+            "args": {
+                "name": "mul_38/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433823,
+            "dur": 2,
+            "args": {
+                "name": "BiasAdd_19/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433826,
+            "dur": 2,
+            "args": {
+                "name": "46-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433828,
+            "dur": 2,
+            "args": {
+                "name": "sub_20/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433830,
+            "dur": 2,
+            "args": {
+                "name": "truediv_20/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433832,
+            "dur": 3,
+            "args": {
+                "name": "mul_40/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433835,
+            "dur": 2,
+            "args": {
+                "name": "BiasAdd_20/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433837,
+            "dur": 1,
+            "args": {
+                "name": "concat_1/axis",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433839,
+            "dur": 2,
+            "args": {
+                "name": "50-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433842,
+            "dur": 2,
+            "args": {
+                "name": "sub_21/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433845,
+            "dur": 1,
+            "args": {
+                "name": "truediv_21/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433847,
+            "dur": 1,
+            "args": {
+                "name": "mul_42/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433849,
+            "dur": 1,
+            "args": {
+                "name": "BiasAdd_21/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433851,
+            "dur": 1,
+            "args": {
+                "name": "52-convolutional/filter",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433854,
+            "dur": 2,
+            "args": {
+                "name": "BiasAdd_22/bias",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Arg",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433857,
+            "dur": 2,
+            "args": {
+                "name": "_arg_Pad_5_0_0",
+                "op": "_Arg"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433860,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_0",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433862,
+            "dur": 30028,
+            "args": {
+                "name": "13-convolutional",
+                "op": "_MklConv2D",
+                "input0": "_arg_Pad_5_0_0",
+                "input1": "13-convolutional/filter",
+                "input2": "DMT/_0",
+                "input3": "DMT/_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832463906,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_2",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832463913,
+            "dur": 1555,
+            "args": {
+                "name": "MklInputConversion/_90",
+                "op": "_MklInputConversion",
+                "input0": "13-convolutional",
+                "input1": "sub_5/y",
+                "input2": "13-convolutional:2",
+                "input3": "DMT/_2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832465483,
+            "dur": 1688,
+            "args": {
+                "name": "sub_5",
+                "op": "_MklSub",
+                "input0": "13-convolutional",
+                "input1": "sub_5/y",
+                "input2": "13-convolutional:2",
+                "input3": "DMT/_2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832467177,
+            "dur": 5,
+            "args": {
+                "name": "Mkl2Tf/_72",
+                "op": "_MklToTf",
+                "input0": "sub_5",
+                "input1": "sub_5:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832467184,
+            "dur": 4127,
+            "args": {
+                "name": "truediv_5",
+                "op": "RealDiv",
+                "input0": "sub_5",
+                "input1": "truediv_5/y"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "truediv_5/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433643,
+            "id": 0
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "truediv_5/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832467184,
+            "id": 0
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832471314,
+            "dur": 1582,
+            "args": {
+                "name": "mul_10",
+                "op": "Mul",
+                "input0": "truediv_5",
+                "input1": "mul_10/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832472898,
+            "dur": 1614,
+            "args": {
+                "name": "BiasAdd_5",
+                "op": "BiasAdd",
+                "input0": "mul_10",
+                "input1": "BiasAdd_5/bias"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "BiasAdd_5/bias",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433647,
+            "id": 1
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "BiasAdd_5/bias",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832472898,
+            "id": 1
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832474514,
+            "dur": 1171,
+            "args": {
+                "name": "mul_11",
+                "op": "Mul",
+                "input0": "mul_11/x",
+                "input1": "BiasAdd_5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832475691,
+            "dur": 1115,
+            "args": {
+                "name": "14-leaky",
+                "op": "Maximum",
+                "input0": "mul_11",
+                "input1": "BiasAdd_5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832476808,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_3",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832476813,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_4",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832476815,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_5",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832476818,
+            "dur": 6557,
+            "args": {
+                "name": "15-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "14-leaky",
+                "input1": "15-convolutional/filter",
+                "input2": "Pad_6/paddings",
+                "input3": "DMT/_3",
+                "input4": "DMT/_4",
+                "input5": "DMT/_5"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "15-convolutional/filter",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433654,
+            "id": 2
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "15-convolutional/filter",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832476818,
+            "id": 2
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_5",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832476817,
+            "id": 3
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_5",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832476818,
+            "id": 3
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832483390,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_6",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832483397,
+            "dur": 824,
+            "args": {
+                "name": "MklInputConversion/_91",
+                "op": "_MklInputConversion",
+                "input0": "15-convolutional",
+                "input1": "sub_6/y",
+                "input2": "15-convolutional:2",
+                "input3": "DMT/_6"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832484228,
+            "dur": 810,
+            "args": {
+                "name": "sub_6",
+                "op": "_MklSub",
+                "input0": "15-convolutional",
+                "input1": "sub_6/y",
+                "input2": "15-convolutional:2",
+                "input3": "DMT/_6"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832485055,
+            "dur": 4,
+            "args": {
+                "name": "Mkl2Tf/_73",
+                "op": "_MklToTf",
+                "input0": "sub_6",
+                "input1": "sub_6:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832485079,
+            "dur": 1270,
+            "args": {
+                "name": "truediv_6",
+                "op": "RealDiv",
+                "input0": "sub_6",
+                "input1": "truediv_6/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832486351,
+            "dur": 750,
+            "args": {
+                "name": "mul_12",
+                "op": "Mul",
+                "input0": "truediv_6",
+                "input1": "mul_12/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832487103,
+            "dur": 738,
+            "args": {
+                "name": "BiasAdd_6",
+                "op": "BiasAdd",
+                "input0": "mul_12",
+                "input1": "BiasAdd_6/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832487843,
+            "dur": 440,
+            "args": {
+                "name": "mul_13",
+                "op": "Mul",
+                "input0": "mul_13/x",
+                "input1": "BiasAdd_6"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832488288,
+            "dur": 485,
+            "args": {
+                "name": "16-leaky",
+                "op": "Maximum",
+                "input0": "mul_13",
+                "input1": "BiasAdd_6"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832488775,
+            "dur": 6,
+            "args": {
+                "name": "DMT/_7",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832488782,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_8",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832488784,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_9",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832488787,
+            "dur": 28618,
+            "args": {
+                "name": "17-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "16-leaky",
+                "input1": "17-convolutional/filter",
+                "input2": "Pad_7/paddings",
+                "input3": "DMT/_7",
+                "input4": "DMT/_8",
+                "input5": "DMT/_9"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_9",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832488786,
+            "id": 4
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_9",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832488787,
+            "id": 4
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832517421,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_10",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832517428,
+            "dur": 1516,
+            "args": {
+                "name": "MklInputConversion/_92",
+                "op": "_MklInputConversion",
+                "input0": "17-convolutional",
+                "input1": "sub_7/y",
+                "input2": "17-convolutional:2",
+                "input3": "DMT/_10"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832518954,
+            "dur": 1614,
+            "args": {
+                "name": "sub_7",
+                "op": "_MklSub",
+                "input0": "17-convolutional",
+                "input1": "sub_7/y",
+                "input2": "17-convolutional:2",
+                "input3": "DMT/_10"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832520573,
+            "dur": 4,
+            "args": {
+                "name": "Mkl2Tf/_74",
+                "op": "_MklToTf",
+                "input0": "sub_7",
+                "input1": "sub_7:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832520579,
+            "dur": 2630,
+            "args": {
+                "name": "truediv_7",
+                "op": "RealDiv",
+                "input0": "sub_7",
+                "input1": "truediv_7/y"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "truediv_7/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433674,
+            "id": 5
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "truediv_7/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832520579,
+            "id": 5
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832523212,
+            "dur": 1507,
+            "args": {
+                "name": "mul_14",
+                "op": "Mul",
+                "input0": "truediv_7",
+                "input1": "mul_14/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832524721,
+            "dur": 1584,
+            "args": {
+                "name": "BiasAdd_7",
+                "op": "BiasAdd",
+                "input0": "mul_14",
+                "input1": "BiasAdd_7/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832526307,
+            "dur": 1111,
+            "args": {
+                "name": "mul_15",
+                "op": "Mul",
+                "input0": "mul_15/x",
+                "input1": "BiasAdd_7"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832527424,
+            "dur": 1086,
+            "args": {
+                "name": "18-leaky",
+                "op": "Maximum",
+                "input0": "mul_15",
+                "input1": "BiasAdd_7"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832528512,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_11",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMaxPool",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832528517,
+            "dur": 3641,
+            "args": {
+                "name": "19-maxpool",
+                "op": "_MklMaxPool",
+                "input0": "18-leaky",
+                "input1": "DMT/_11"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832532172,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_12",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832532177,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_13",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832532180,
+            "dur": 28761,
+            "args": {
+                "name": "20-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "19-maxpool",
+                "input1": "20-convolutional/filter",
+                "input2": "Pad_8/paddings",
+                "input3": "19-maxpool:2",
+                "input4": "DMT/_12",
+                "input5": "DMT/_13"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832560956,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_14",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832560963,
+            "dur": 926,
+            "args": {
+                "name": "MklInputConversion/_93",
+                "op": "_MklInputConversion",
+                "input0": "20-convolutional",
+                "input1": "sub_8/y",
+                "input2": "20-convolutional:2",
+                "input3": "DMT/_14"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832561898,
+            "dur": 802,
+            "args": {
+                "name": "sub_8",
+                "op": "_MklSub",
+                "input0": "20-convolutional",
+                "input1": "sub_8/y",
+                "input2": "20-convolutional:2",
+                "input3": "DMT/_14"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832562705,
+            "dur": 5,
+            "args": {
+                "name": "Mkl2Tf/_75",
+                "op": "_MklToTf",
+                "input0": "sub_8",
+                "input1": "sub_8:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832562711,
+            "dur": 1239,
+            "args": {
+                "name": "truediv_8",
+                "op": "RealDiv",
+                "input0": "sub_8",
+                "input1": "truediv_8/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832563952,
+            "dur": 732,
+            "args": {
+                "name": "mul_16",
+                "op": "Mul",
+                "input0": "truediv_8",
+                "input1": "mul_16/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832564685,
+            "dur": 788,
+            "args": {
+                "name": "BiasAdd_8",
+                "op": "BiasAdd",
+                "input0": "mul_16",
+                "input1": "BiasAdd_8/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832565474,
+            "dur": 432,
+            "args": {
+                "name": "mul_17",
+                "op": "Mul",
+                "input0": "mul_17/x",
+                "input1": "BiasAdd_8"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832565910,
+            "dur": 479,
+            "args": {
+                "name": "21-leaky",
+                "op": "Maximum",
+                "input0": "mul_17",
+                "input1": "BiasAdd_8"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832566392,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_15",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832566398,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_16",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832566400,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_17",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832566403,
+            "dur": 5005,
+            "args": {
+                "name": "22-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "21-leaky",
+                "input1": "22-convolutional/filter",
+                "input2": "Pad_9/paddings",
+                "input3": "DMT/_15",
+                "input4": "DMT/_16",
+                "input5": "DMT/_17"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832571423,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_18",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832571429,
+            "dur": 452,
+            "args": {
+                "name": "MklInputConversion/_94",
+                "op": "_MklInputConversion",
+                "input0": "22-convolutional",
+                "input1": "sub_9/y",
+                "input2": "22-convolutional:2",
+                "input3": "DMT/_18"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "sub_9/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433696,
+            "id": 6
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "sub_9/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832571429,
+            "id": 6
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832571889,
+            "dur": 392,
+            "args": {
+                "name": "sub_9",
+                "op": "_MklSub",
+                "input0": "22-convolutional",
+                "input1": "sub_9/y",
+                "input2": "22-convolutional:2",
+                "input3": "DMT/_18"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "sub_9/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433696,
+            "id": 7
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "sub_9/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832571889,
+            "id": 7
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832572285,
+            "dur": 3,
+            "args": {
+                "name": "Mkl2Tf/_76",
+                "op": "_MklToTf",
+                "input0": "sub_9",
+                "input1": "sub_9:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832572290,
+            "dur": 603,
+            "args": {
+                "name": "truediv_9",
+                "op": "RealDiv",
+                "input0": "sub_9",
+                "input1": "truediv_9/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832572895,
+            "dur": 405,
+            "args": {
+                "name": "mul_18",
+                "op": "Mul",
+                "input0": "truediv_9",
+                "input1": "mul_18/y"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mul_18/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433701,
+            "id": 8
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mul_18/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832572895,
+            "id": 8
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832573301,
+            "dur": 370,
+            "args": {
+                "name": "BiasAdd_9",
+                "op": "BiasAdd",
+                "input0": "mul_18",
+                "input1": "BiasAdd_9/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832573672,
+            "dur": 104,
+            "args": {
+                "name": "mul_19",
+                "op": "Mul",
+                "input0": "mul_19/x",
+                "input1": "BiasAdd_9"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832573779,
+            "dur": 223,
+            "args": {
+                "name": "23-leaky",
+                "op": "Maximum",
+                "input0": "mul_19",
+                "input1": "BiasAdd_9"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832574003,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_19",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832574007,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_20",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832574009,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_21",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832574012,
+            "dur": 28752,
+            "args": {
+                "name": "24-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "23-leaky",
+                "input1": "24-convolutional/filter",
+                "input2": "Pad_10/paddings",
+                "input3": "DMT/_19",
+                "input4": "DMT/_20",
+                "input5": "DMT/_21"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_21",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832574011,
+            "id": 9
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_21",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832574012,
+            "id": 9
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832602780,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_22",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832602786,
+            "dur": 796,
+            "args": {
+                "name": "MklInputConversion/_95",
+                "op": "_MklInputConversion",
+                "input0": "24-convolutional",
+                "input1": "sub_10/y",
+                "input2": "24-convolutional:2",
+                "input3": "DMT/_22"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832603591,
+            "dur": 800,
+            "args": {
+                "name": "sub_10",
+                "op": "_MklSub",
+                "input0": "24-convolutional",
+                "input1": "sub_10/y",
+                "input2": "24-convolutional:2",
+                "input3": "DMT/_22"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832604396,
+            "dur": 4,
+            "args": {
+                "name": "Mkl2Tf/_77",
+                "op": "_MklToTf",
+                "input0": "sub_10",
+                "input1": "sub_10:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832604402,
+            "dur": 1285,
+            "args": {
+                "name": "truediv_10",
+                "op": "RealDiv",
+                "input0": "sub_10",
+                "input1": "truediv_10/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832605689,
+            "dur": 739,
+            "args": {
+                "name": "mul_20",
+                "op": "Mul",
+                "input0": "truediv_10",
+                "input1": "mul_20/y"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mul_20/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433713,
+            "id": 10
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mul_20/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832605689,
+            "id": 10
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832606430,
+            "dur": 741,
+            "args": {
+                "name": "BiasAdd_10",
+                "op": "BiasAdd",
+                "input0": "mul_20",
+                "input1": "BiasAdd_10/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832607172,
+            "dur": 424,
+            "args": {
+                "name": "mul_21",
+                "op": "Mul",
+                "input0": "mul_21/x",
+                "input1": "BiasAdd_10"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832607601,
+            "dur": 486,
+            "args": {
+                "name": "25-leaky",
+                "op": "Maximum",
+                "input0": "mul_21",
+                "input1": "BiasAdd_10"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832608090,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_23",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832608096,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_24",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832608098,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_25",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832608101,
+            "dur": 4619,
+            "args": {
+                "name": "26-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "25-leaky",
+                "input1": "26-convolutional/filter",
+                "input2": "Pad_11/paddings",
+                "input3": "DMT/_23",
+                "input4": "DMT/_24",
+                "input5": "DMT/_25"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_25",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832608100,
+            "id": 11
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_25",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832608101,
+            "id": 11
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832612735,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_26",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832612742,
+            "dur": 484,
+            "args": {
+                "name": "MklInputConversion/_96",
+                "op": "_MklInputConversion",
+                "input0": "26-convolutional",
+                "input1": "sub_11/y",
+                "input2": "26-convolutional:2",
+                "input3": "DMT/_26"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832613233,
+            "dur": 411,
+            "args": {
+                "name": "sub_11",
+                "op": "_MklSub",
+                "input0": "26-convolutional",
+                "input1": "sub_11/y",
+                "input2": "26-convolutional:2",
+                "input3": "DMT/_26"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832613648,
+            "dur": 4,
+            "args": {
+                "name": "Mkl2Tf/_78",
+                "op": "_MklToTf",
+                "input0": "sub_11",
+                "input1": "sub_11:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832613654,
+            "dur": 606,
+            "args": {
+                "name": "truediv_11",
+                "op": "RealDiv",
+                "input0": "sub_11",
+                "input1": "truediv_11/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832614262,
+            "dur": 356,
+            "args": {
+                "name": "mul_22",
+                "op": "Mul",
+                "input0": "truediv_11",
+                "input1": "mul_22/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832614620,
+            "dur": 369,
+            "args": {
+                "name": "BiasAdd_11",
+                "op": "BiasAdd",
+                "input0": "mul_22",
+                "input1": "BiasAdd_11/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832614990,
+            "dur": 158,
+            "args": {
+                "name": "mul_23",
+                "op": "Mul",
+                "input0": "mul_23/x",
+                "input1": "BiasAdd_11"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832615151,
+            "dur": 230,
+            "args": {
+                "name": "27-leaky",
+                "op": "Maximum",
+                "input0": "mul_23",
+                "input1": "BiasAdd_11"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832615382,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_27",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832615386,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_28",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832615389,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_29",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832615391,
+            "dur": 29753,
+            "args": {
+                "name": "28-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "27-leaky",
+                "input1": "28-convolutional/filter",
+                "input2": "Pad_12/paddings",
+                "input3": "DMT/_27",
+                "input4": "DMT/_28",
+                "input5": "DMT/_29"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832645159,
+            "dur": 6,
+            "args": {
+                "name": "DMT/_30",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832645166,
+            "dur": 747,
+            "args": {
+                "name": "MklInputConversion/_97",
+                "op": "_MklInputConversion",
+                "input0": "28-convolutional",
+                "input1": "sub_12/y",
+                "input2": "28-convolutional:2",
+                "input3": "DMT/_30"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "sub_12/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433733,
+            "id": 12
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "sub_12/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832645166,
+            "id": 12
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832645921,
+            "dur": 862,
+            "args": {
+                "name": "sub_12",
+                "op": "_MklSub",
+                "input0": "28-convolutional",
+                "input1": "sub_12/y",
+                "input2": "28-convolutional:2",
+                "input3": "DMT/_30"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "sub_12/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433733,
+            "id": 13
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "sub_12/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832645921,
+            "id": 13
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832646788,
+            "dur": 4,
+            "args": {
+                "name": "Mkl2Tf/_79",
+                "op": "_MklToTf",
+                "input0": "sub_12",
+                "input1": "sub_12:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832646793,
+            "dur": 1343,
+            "args": {
+                "name": "truediv_12",
+                "op": "RealDiv",
+                "input0": "sub_12",
+                "input1": "truediv_12/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832648137,
+            "dur": 794,
+            "args": {
+                "name": "mul_24",
+                "op": "Mul",
+                "input0": "truediv_12",
+                "input1": "mul_24/y"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mul_24/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433739,
+            "id": 14
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mul_24/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832648137,
+            "id": 14
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832648933,
+            "dur": 809,
+            "args": {
+                "name": "BiasAdd_12",
+                "op": "BiasAdd",
+                "input0": "mul_24",
+                "input1": "BiasAdd_12/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832649744,
+            "dur": 454,
+            "args": {
+                "name": "mul_25",
+                "op": "Mul",
+                "input0": "mul_25/x",
+                "input1": "BiasAdd_12"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832650203,
+            "dur": 507,
+            "args": {
+                "name": "29-leaky",
+                "op": "Maximum",
+                "input0": "mul_25",
+                "input1": "BiasAdd_12"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832650712,
+            "dur": 3,
+            "args": {
+                "name": "concat",
+                "op": "Identity",
+                "input0": "29-leaky"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832650716,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_31",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832650731,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_59",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832650734,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_60",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832650736,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_61",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832650739,
+            "dur": 8716,
+            "args": {
+                "name": "46-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "concat",
+                "input1": "46-convolutional/filter",
+                "input2": "Pad_20/paddings",
+                "input3": "DMT/_59",
+                "input4": "DMT/_60",
+                "input5": "DMT/_61"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832659475,
+            "dur": 7,
+            "args": {
+                "name": "DMT/_62",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832659484,
+            "dur": 244,
+            "args": {
+                "name": "MklInputConversion/_98",
+                "op": "_MklInputConversion",
+                "input0": "46-convolutional",
+                "input1": "sub_20/y",
+                "input2": "46-convolutional:2",
+                "input3": "DMT/_62"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "sub_20/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433830,
+            "id": 15
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "sub_20/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832659484,
+            "id": 15
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832659752,
+            "dur": 144,
+            "args": {
+                "name": "sub_20",
+                "op": "_MklSub",
+                "input0": "46-convolutional",
+                "input1": "sub_20/y",
+                "input2": "46-convolutional:2",
+                "input3": "DMT/_62"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "sub_20/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433830,
+            "id": 16
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "sub_20/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832659752,
+            "id": 16
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832659902,
+            "dur": 5,
+            "args": {
+                "name": "Mkl2Tf/_87",
+                "op": "_MklToTf",
+                "input0": "sub_20",
+                "input1": "sub_20:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832659908,
+            "dur": 197,
+            "args": {
+                "name": "truediv_20",
+                "op": "RealDiv",
+                "input0": "sub_20",
+                "input1": "truediv_20/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832660107,
+            "dur": 443,
+            "args": {
+                "name": "mul_40",
+                "op": "Mul",
+                "input0": "truediv_20",
+                "input1": "mul_40/y"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mul_40/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433835,
+            "id": 17
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mul_40/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832660107,
+            "id": 17
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMaxPool",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832650741,
+            "dur": 9837,
+            "args": {
+                "name": "30-maxpool",
+                "op": "_MklMaxPool",
+                "input0": "29-leaky",
+                "input1": "DMT/_31"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "29-leaky",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832650710,
+            "id": 18
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "29-leaky",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832650741,
+            "id": 18
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_31",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832650720,
+            "id": 19
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_31",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832650741,
+            "id": 19
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832660584,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_32",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832660589,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_33",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1558815832660552,
+            "dur": 6215,
+            "args": {
+                "name": "BiasAdd_20",
+                "op": "BiasAdd",
+                "input0": "mul_40",
+                "input1": "BiasAdd_20/bias"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mul_40",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832660550,
+            "id": 20
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mul_40",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1558815832660552,
+            "id": 20
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "BiasAdd_20/bias",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433837,
+            "id": 21
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "BiasAdd_20/bias",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1558815832660552,
+            "id": 21
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832666780,
+            "dur": 2493,
+            "args": {
+                "name": "mul_41",
+                "op": "Mul",
+                "input0": "mul_41/x",
+                "input1": "BiasAdd_20"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "BiasAdd_20",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1558815832666767,
+            "id": 22
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "BiasAdd_20",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832666780,
+            "id": 22
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832669289,
+            "dur": 77,
+            "args": {
+                "name": "47-leaky",
+                "op": "Maximum",
+                "input0": "mul_41",
+                "input1": "BiasAdd_20"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "BiasAdd_20",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1558815832666767,
+            "id": 23
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "BiasAdd_20",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832669289,
+            "id": 23
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ExtractImagePatches",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832669368,
+            "dur": 613,
+            "args": {
+                "name": "ExtractImagePatches",
+                "op": "ExtractImagePatches",
+                "input0": "47-leaky"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832669986,
+            "dur": 7,
+            "args": {
+                "name": "DMT/_63",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832669994,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_64",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832669997,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_65",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832660591,
+            "dur": 39571,
+            "args": {
+                "name": "31-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "30-maxpool",
+                "input1": "31-convolutional/filter",
+                "input2": "Pad_13/paddings",
+                "input3": "30-maxpool:2",
+                "input4": "DMT/_32",
+                "input5": "DMT/_33"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "31-convolutional/filter",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832433744,
+            "id": 24
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "31-convolutional/filter",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832660591,
+            "id": 24
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_32",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832660588,
+            "id": 25
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_32",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832660591,
+            "id": 25
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_33",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832660590,
+            "id": 26
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_33",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832660591,
+            "id": 26
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832700178,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_34",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832700185,
+            "dur": 515,
+            "args": {
+                "name": "MklInputConversion/_99",
+                "op": "_MklInputConversion",
+                "input0": "31-convolutional",
+                "input1": "sub_13/y",
+                "input2": "31-convolutional:2",
+                "input3": "DMT/_34"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "31-convolutional",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832700162,
+            "id": 27
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "31-convolutional",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832700185,
+            "id": 27
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "sub_13/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433746,
+            "id": 28
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "sub_13/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832700185,
+            "id": 28
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "31-convolutional:2",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832700162,
+            "id": 29
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "31-convolutional:2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832700185,
+            "id": 29
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832700708,
+            "dur": 445,
+            "args": {
+                "name": "sub_13",
+                "op": "_MklSub",
+                "input0": "31-convolutional",
+                "input1": "sub_13/y",
+                "input2": "31-convolutional:2",
+                "input3": "DMT/_34"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "31-convolutional",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832700162,
+            "id": 30
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "31-convolutional",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832700708,
+            "id": 30
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "sub_13/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433746,
+            "id": 31
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "sub_13/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832700708,
+            "id": 31
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "31-convolutional:2",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832700162,
+            "id": 32
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "31-convolutional:2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832700708,
+            "id": 32
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832701157,
+            "dur": 4,
+            "args": {
+                "name": "Mkl2Tf/_80",
+                "op": "_MklToTf",
+                "input0": "sub_13",
+                "input1": "sub_13:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832701163,
+            "dur": 667,
+            "args": {
+                "name": "truediv_13",
+                "op": "RealDiv",
+                "input0": "sub_13",
+                "input1": "truediv_13/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832701831,
+            "dur": 359,
+            "args": {
+                "name": "mul_26",
+                "op": "Mul",
+                "input0": "truediv_13",
+                "input1": "mul_26/y"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mul_26/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433751,
+            "id": 33
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mul_26/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832701831,
+            "id": 33
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832702191,
+            "dur": 370,
+            "args": {
+                "name": "BiasAdd_13",
+                "op": "BiasAdd",
+                "input0": "mul_26",
+                "input1": "BiasAdd_13/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832702563,
+            "dur": 139,
+            "args": {
+                "name": "mul_27",
+                "op": "Mul",
+                "input0": "mul_27/x",
+                "input1": "BiasAdd_13"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832702705,
+            "dur": 229,
+            "args": {
+                "name": "32-leaky",
+                "op": "Maximum",
+                "input0": "mul_27",
+                "input1": "BiasAdd_13"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832702936,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_35",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832702940,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_36",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832702942,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_37",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832702945,
+            "dur": 4800,
+            "args": {
+                "name": "33-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "32-leaky",
+                "input1": "33-convolutional/filter",
+                "input2": "Pad_14/paddings",
+                "input3": "DMT/_35",
+                "input4": "DMT/_36",
+                "input5": "DMT/_37"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "33-convolutional/filter",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433755,
+            "id": 34
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "33-convolutional/filter",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832702945,
+            "id": 34
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_37",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832702944,
+            "id": 35
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_37",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832702945,
+            "id": 35
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832707759,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_38",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832707766,
+            "dur": 373,
+            "args": {
+                "name": "MklInputConversion/_100",
+                "op": "_MklInputConversion",
+                "input0": "33-convolutional",
+                "input1": "sub_14/y",
+                "input2": "33-convolutional:2",
+                "input3": "DMT/_38"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832708147,
+            "dur": 208,
+            "args": {
+                "name": "sub_14",
+                "op": "_MklSub",
+                "input0": "33-convolutional",
+                "input1": "sub_14/y",
+                "input2": "33-convolutional:2",
+                "input3": "DMT/_38"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832708359,
+            "dur": 3,
+            "args": {
+                "name": "Mkl2Tf/_81",
+                "op": "_MklToTf",
+                "input0": "sub_14",
+                "input1": "sub_14:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832708364,
+            "dur": 300,
+            "args": {
+                "name": "truediv_14",
+                "op": "RealDiv",
+                "input0": "sub_14",
+                "input1": "truediv_14/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832708665,
+            "dur": 180,
+            "args": {
+                "name": "mul_28",
+                "op": "Mul",
+                "input0": "truediv_14",
+                "input1": "mul_28/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832708846,
+            "dur": 187,
+            "args": {
+                "name": "BiasAdd_14",
+                "op": "BiasAdd",
+                "input0": "mul_28",
+                "input1": "BiasAdd_14/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832709035,
+            "dur": 96,
+            "args": {
+                "name": "mul_29",
+                "op": "Mul",
+                "input0": "mul_29/x",
+                "input1": "BiasAdd_14"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832709134,
+            "dur": 113,
+            "args": {
+                "name": "34-leaky",
+                "op": "Maximum",
+                "input0": "mul_29",
+                "input1": "BiasAdd_14"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832709248,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_39",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832709252,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_40",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832709255,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_41",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832709257,
+            "dur": 36445,
+            "args": {
+                "name": "35-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "34-leaky",
+                "input1": "35-convolutional/filter",
+                "input2": "Pad_15/paddings",
+                "input3": "DMT/_39",
+                "input4": "DMT/_40",
+                "input5": "DMT/_41"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832745719,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_42",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832745725,
+            "dur": 432,
+            "args": {
+                "name": "MklInputConversion/_101",
+                "op": "_MklInputConversion",
+                "input0": "35-convolutional",
+                "input1": "sub_15/y",
+                "input2": "35-convolutional:2",
+                "input3": "DMT/_42"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "sub_15/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433770,
+            "id": 36
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "sub_15/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832745725,
+            "id": 36
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832746165,
+            "dur": 394,
+            "args": {
+                "name": "sub_15",
+                "op": "_MklSub",
+                "input0": "35-convolutional",
+                "input1": "sub_15/y",
+                "input2": "35-convolutional:2",
+                "input3": "DMT/_42"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "sub_15/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433770,
+            "id": 37
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "sub_15/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832746165,
+            "id": 37
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832746562,
+            "dur": 4,
+            "args": {
+                "name": "Mkl2Tf/_82",
+                "op": "_MklToTf",
+                "input0": "sub_15",
+                "input1": "sub_15:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832746568,
+            "dur": 579,
+            "args": {
+                "name": "truediv_15",
+                "op": "RealDiv",
+                "input0": "sub_15",
+                "input1": "truediv_15/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832747149,
+            "dur": 350,
+            "args": {
+                "name": "mul_30",
+                "op": "Mul",
+                "input0": "truediv_15",
+                "input1": "mul_30/y"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mul_30/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433774,
+            "id": 38
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mul_30/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832747149,
+            "id": 38
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832747500,
+            "dur": 369,
+            "args": {
+                "name": "BiasAdd_15",
+                "op": "BiasAdd",
+                "input0": "mul_30",
+                "input1": "BiasAdd_15/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832747871,
+            "dur": 99,
+            "args": {
+                "name": "mul_31",
+                "op": "Mul",
+                "input0": "mul_31/x",
+                "input1": "BiasAdd_15"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832747973,
+            "dur": 223,
+            "args": {
+                "name": "36-leaky",
+                "op": "Maximum",
+                "input0": "mul_31",
+                "input1": "BiasAdd_15"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832748197,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_43",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832748201,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_44",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832748203,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_45",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832748208,
+            "dur": 4479,
+            "args": {
+                "name": "37-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "36-leaky",
+                "input1": "37-convolutional/filter",
+                "input2": "Pad_16/paddings",
+                "input3": "DMT/_43",
+                "input4": "DMT/_44",
+                "input5": "DMT/_45"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_45",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832748205,
+            "id": 39
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_45",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832748208,
+            "id": 39
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832752701,
+            "dur": 6,
+            "args": {
+                "name": "DMT/_46",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832752708,
+            "dur": 284,
+            "args": {
+                "name": "MklInputConversion/_102",
+                "op": "_MklInputConversion",
+                "input0": "37-convolutional",
+                "input1": "sub_16/y",
+                "input2": "37-convolutional:2",
+                "input3": "DMT/_46"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832752999,
+            "dur": 278,
+            "args": {
+                "name": "sub_16",
+                "op": "_MklSub",
+                "input0": "37-convolutional",
+                "input1": "sub_16/y",
+                "input2": "37-convolutional:2",
+                "input3": "DMT/_46"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832753282,
+            "dur": 3,
+            "args": {
+                "name": "Mkl2Tf/_83",
+                "op": "_MklToTf",
+                "input0": "sub_16",
+                "input1": "sub_16:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832753287,
+            "dur": 326,
+            "args": {
+                "name": "truediv_16",
+                "op": "RealDiv",
+                "input0": "sub_16",
+                "input1": "truediv_16/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832753614,
+            "dur": 193,
+            "args": {
+                "name": "mul_32",
+                "op": "Mul",
+                "input0": "truediv_16",
+                "input1": "mul_32/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832753809,
+            "dur": 201,
+            "args": {
+                "name": "BiasAdd_16",
+                "op": "BiasAdd",
+                "input0": "mul_32",
+                "input1": "BiasAdd_16/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832754012,
+            "dur": 61,
+            "args": {
+                "name": "mul_33",
+                "op": "Mul",
+                "input0": "mul_33/x",
+                "input1": "BiasAdd_16"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832754076,
+            "dur": 122,
+            "args": {
+                "name": "38-leaky",
+                "op": "Maximum",
+                "input0": "mul_33",
+                "input1": "BiasAdd_16"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832754199,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_47",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832754203,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_48",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832754205,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_49",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832754208,
+            "dur": 36275,
+            "args": {
+                "name": "39-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "38-leaky",
+                "input1": "39-convolutional/filter",
+                "input2": "Pad_17/paddings",
+                "input3": "DMT/_47",
+                "input4": "DMT/_48",
+                "input5": "DMT/_49"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_49",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832754207,
+            "id": 40
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_49",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832754208,
+            "id": 40
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832790500,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_50",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832790507,
+            "dur": 375,
+            "args": {
+                "name": "MklInputConversion/_103",
+                "op": "_MklInputConversion",
+                "input0": "39-convolutional",
+                "input1": "sub_17/y",
+                "input2": "39-convolutional:2",
+                "input3": "DMT/_50"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832790890,
+            "dur": 436,
+            "args": {
+                "name": "sub_17",
+                "op": "_MklSub",
+                "input0": "39-convolutional",
+                "input1": "sub_17/y",
+                "input2": "39-convolutional:2",
+                "input3": "DMT/_50"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832791330,
+            "dur": 4,
+            "args": {
+                "name": "Mkl2Tf/_84",
+                "op": "_MklToTf",
+                "input0": "sub_17",
+                "input1": "sub_17:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832791336,
+            "dur": 643,
+            "args": {
+                "name": "truediv_17",
+                "op": "RealDiv",
+                "input0": "sub_17",
+                "input1": "truediv_17/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832791981,
+            "dur": 380,
+            "args": {
+                "name": "mul_34",
+                "op": "Mul",
+                "input0": "truediv_17",
+                "input1": "mul_34/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832792363,
+            "dur": 396,
+            "args": {
+                "name": "BiasAdd_17",
+                "op": "BiasAdd",
+                "input0": "mul_34",
+                "input1": "BiasAdd_17/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832792760,
+            "dur": 123,
+            "args": {
+                "name": "mul_35",
+                "op": "Mul",
+                "input0": "mul_35/x",
+                "input1": "BiasAdd_17"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832792886,
+            "dur": 264,
+            "args": {
+                "name": "40-leaky",
+                "op": "Maximum",
+                "input0": "mul_35",
+                "input1": "BiasAdd_17"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832793152,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_51",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832793157,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_52",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832793159,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_53",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832793161,
+            "dur": 71735,
+            "args": {
+                "name": "41-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "40-leaky",
+                "input1": "41-convolutional/filter",
+                "input2": "Pad_18/paddings",
+                "input3": "DMT/_51",
+                "input4": "DMT/_52",
+                "input5": "DMT/_53"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832864912,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_54",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832864919,
+            "dur": 451,
+            "args": {
+                "name": "MklInputConversion/_104",
+                "op": "_MklInputConversion",
+                "input0": "41-convolutional",
+                "input1": "sub_18/y",
+                "input2": "41-convolutional:2",
+                "input3": "DMT/_54"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832865377,
+            "dur": 390,
+            "args": {
+                "name": "sub_18",
+                "op": "_MklSub",
+                "input0": "41-convolutional",
+                "input1": "sub_18/y",
+                "input2": "41-convolutional:2",
+                "input3": "DMT/_54"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832865771,
+            "dur": 4,
+            "args": {
+                "name": "Mkl2Tf/_85",
+                "op": "_MklToTf",
+                "input0": "sub_18",
+                "input1": "sub_18:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832865776,
+            "dur": 587,
+            "args": {
+                "name": "truediv_18",
+                "op": "RealDiv",
+                "input0": "sub_18",
+                "input1": "truediv_18/y"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "truediv_18/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433809,
+            "id": 41
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "truediv_18/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832865776,
+            "id": 41
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832866365,
+            "dur": 352,
+            "args": {
+                "name": "mul_36",
+                "op": "Mul",
+                "input0": "truediv_18",
+                "input1": "mul_36/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832866718,
+            "dur": 370,
+            "args": {
+                "name": "BiasAdd_18",
+                "op": "BiasAdd",
+                "input0": "mul_36",
+                "input1": "BiasAdd_18/bias"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "BiasAdd_18/bias",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433813,
+            "id": 42
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "BiasAdd_18/bias",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832866718,
+            "id": 42
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832867089,
+            "dur": 100,
+            "args": {
+                "name": "mul_37",
+                "op": "Mul",
+                "input0": "mul_37/x",
+                "input1": "BiasAdd_18"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832867191,
+            "dur": 224,
+            "args": {
+                "name": "42-leaky",
+                "op": "Maximum",
+                "input0": "mul_37",
+                "input1": "BiasAdd_18"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832867416,
+            "dur": 4,
+            "args": {
+                "name": "DMT/_55",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832867420,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_56",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832867423,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_57",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832867425,
+            "dur": 72390,
+            "args": {
+                "name": "43-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "42-leaky",
+                "input1": "43-convolutional/filter",
+                "input2": "Pad_19/paddings",
+                "input3": "DMT/_55",
+                "input4": "DMT/_56",
+                "input5": "DMT/_57"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "DMT/_56",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832867422,
+            "id": 43
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "DMT/_56",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832867425,
+            "id": 43
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832939831,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_58",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832939837,
+            "dur": 447,
+            "args": {
+                "name": "MklInputConversion/_105",
+                "op": "_MklInputConversion",
+                "input0": "43-convolutional",
+                "input1": "sub_19/y",
+                "input2": "43-convolutional:2",
+                "input3": "DMT/_58"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832940292,
+            "dur": 391,
+            "args": {
+                "name": "sub_19",
+                "op": "_MklSub",
+                "input0": "43-convolutional",
+                "input1": "sub_19/y",
+                "input2": "43-convolutional:2",
+                "input3": "DMT/_58"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832940686,
+            "dur": 4,
+            "args": {
+                "name": "Mkl2Tf/_86",
+                "op": "_MklToTf",
+                "input0": "sub_19",
+                "input1": "sub_19:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832940692,
+            "dur": 632,
+            "args": {
+                "name": "truediv_19",
+                "op": "RealDiv",
+                "input0": "sub_19",
+                "input1": "truediv_19/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832941326,
+            "dur": 354,
+            "args": {
+                "name": "mul_38",
+                "op": "Mul",
+                "input0": "truediv_19",
+                "input1": "mul_38/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832941681,
+            "dur": 437,
+            "args": {
+                "name": "BiasAdd_19",
+                "op": "BiasAdd",
+                "input0": "mul_38",
+                "input1": "BiasAdd_19/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832942120,
+            "dur": 112,
+            "args": {
+                "name": "mul_39",
+                "op": "Mul",
+                "input0": "mul_39/x",
+                "input1": "BiasAdd_19"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832942235,
+            "dur": 226,
+            "args": {
+                "name": "44-leaky",
+                "op": "Maximum",
+                "input0": "mul_39",
+                "input1": "BiasAdd_19"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklConcatV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832942462,
+            "dur": 379,
+            "args": {
+                "name": "concat_1",
+                "op": "_MklConcatV2",
+                "input0": "ExtractImagePatches",
+                "input1": "44-leaky",
+                "input2": "concat_1/axis",
+                "input3": "DMT/_63",
+                "input4": "DMT/_64",
+                "input5": "DMT/_65"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "concat_1/axis",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1558815832433838,
+            "id": 44
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "concat_1/axis",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832942462,
+            "id": 44
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832942849,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_66",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832942855,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_67",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815832942857,
+            "dur": 92195,
+            "args": {
+                "name": "50-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "concat_1",
+                "input1": "50-convolutional/filter",
+                "input2": "Pad_21/paddings",
+                "input3": "concat_1:1",
+                "input4": "DMT/_66",
+                "input5": "DMT/_67"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833035069,
+            "dur": 5,
+            "args": {
+                "name": "DMT/_68",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833035075,
+            "dur": 442,
+            "args": {
+                "name": "MklInputConversion/_106",
+                "op": "_MklInputConversion",
+                "input0": "50-convolutional",
+                "input1": "sub_21/y",
+                "input2": "50-convolutional:2",
+                "input3": "DMT/_68"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833035526,
+            "dur": 391,
+            "args": {
+                "name": "sub_21",
+                "op": "_MklSub",
+                "input0": "50-convolutional",
+                "input1": "sub_21/y",
+                "input2": "50-convolutional:2",
+                "input3": "DMT/_68"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833035920,
+            "dur": 4,
+            "args": {
+                "name": "Mkl2Tf/_88",
+                "op": "_MklToTf",
+                "input0": "sub_21",
+                "input1": "sub_21:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833035925,
+            "dur": 583,
+            "args": {
+                "name": "truediv_21",
+                "op": "RealDiv",
+                "input0": "sub_21",
+                "input1": "truediv_21/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833036509,
+            "dur": 352,
+            "args": {
+                "name": "mul_42",
+                "op": "Mul",
+                "input0": "truediv_21",
+                "input1": "mul_42/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833036862,
+            "dur": 415,
+            "args": {
+                "name": "BiasAdd_21",
+                "op": "BiasAdd",
+                "input0": "mul_42",
+                "input1": "BiasAdd_21/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833037278,
+            "dur": 103,
+            "args": {
+                "name": "mul_43",
+                "op": "Mul",
+                "input0": "mul_43/x",
+                "input1": "BiasAdd_21"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Maximum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833037384,
+            "dur": 224,
+            "args": {
+                "name": "51-leaky",
+                "op": "Maximum",
+                "input0": "mul_43",
+                "input1": "BiasAdd_21"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833037610,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_69",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833037614,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_70",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833037617,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_71",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklPadWithConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833037619,
+            "dur": 4579,
+            "args": {
+                "name": "52-convolutional",
+                "op": "_MklPadWithConv2D",
+                "input0": "51-leaky",
+                "input1": "52-convolutional/filter",
+                "input2": "Pad_22/paddings",
+                "input3": "DMT/_69",
+                "input4": "DMT/_70",
+                "input5": "DMT/_71"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833042213,
+            "dur": 329,
+            "args": {
+                "name": "Mkl2Tf/_89",
+                "op": "_MklToTf",
+                "input0": "52-convolutional",
+                "input1": "52-convolutional:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833042563,
+            "dur": 169,
+            "args": {
+                "name": "BiasAdd_22",
+                "op": "BiasAdd",
+                "input0": "52-convolutional",
+                "input1": "BiasAdd_22/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833042733,
+            "dur": 2,
+            "args": {
+                "name": "output",
+                "op": "Identity",
+                "input0": "BiasAdd_22"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Retval",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1558815833042736,
+            "dur": 7,
+            "args": {
+                "name": "_retval_output_0_0",
+                "op": "_Retval",
+                "input0": "output"
+            }
+        }
+    ]
+}
